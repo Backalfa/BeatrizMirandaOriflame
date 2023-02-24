@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>W3.CSS Template</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="content/css/stylemain.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <style>
+            .w3-sidebar a {
+                font-family: "Roboto", sans-serif;
+            }
+            body, h1, h2, h3, h4, h5, h6, .w3-wide {
+                font-family: "Montserrat", sans-serif;
+            }
+        </style>
+    </head>
+    <body class="w3-content" style="max-width: 1200px;">
+        <!-- Sidebar/menu -->
+        <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index: 3; width: 250px;" id="mySidebar">
+            <div class="w3-container w3-display-container w3-padding-16">
+                <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+                <img src="content/imgs/LOGO.jpg" style="width: 100%;">
+            </div>
+            <a href="https://pt.oriflame.com/products/digital-catalogue-current?PageNumber=1" class="w3-bar-item w3-button w3-padding" target="_blank">Catálogo Atual</a>
+            <a href="https://pt.oriflame.com/catalogue?cataloguecode=Norrsken%2F2023-norrsken-spring" class="w3-bar-item w3-button w3-padding" target="_blank">NORRSKEN- Jóias</a>
+            <a href="https://pt.oriflame.com/catalogue?cataloguecode=FlyerC04&PageNumber=1" class="w3-bar-item w3-button w3-padding" target="_blank">Oportunidades</a>
+            <a href="#promo" class="w3-bar-item w3-button w3-padding">Produtos Disponíveis</a>
+        </nav>
+
+        <!-- Top menu on small screens -->
+        <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+            <div class="w3-bar-item w3-padding-24 w3-wide">
+            </div>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+        </header>
+
+        <!-- Overlay effect when opening sidebar on small screens -->
+        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer;" title="close side menu" id="myOverlay"></div>
+
+        <!-- !PAGE CONTENT! -->
+        <div class="w3-main" style="margin-left: 250px;">
+            <!-- Push down content on small screens -->
+            <div class="w3-hide-large" style="margin-top: 83px;"></div>
+
+            <!-- Top header -->
+            <header class="w3-container w3-xlarge">
+                <p class="w3-right">
+                    <i class="fa fa-shopping-cart w3-margin-right"></i>
+                    <i class="fa fa-search"></i>
+                </p>
+            </header>
+
+            <!-- Image header -->
+            <div class="w3-display-container w3-container">
+                <img src="content/imgs/top-view-salts-cream-container.jpg" alt="Oriflame" style="width: 100%;" />
+                <div class="w3-display-topleft w3-text-black" style="padding: 24px 48px;">
+                    <h1 class="w3-jumbo w3-hide-small">ORIFLAME</h1>
+                    <h1 class="w3-hide-large w3-hide-medium">ORIFLAME</h1>
+                    <h1 class="w3-hide-small">COLLECTION 2023</h1>
+                    <p><a href="#promo" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
+                </div>
+            </div>
+
+            <div class="w3-container w3-text-grey" id="promo">
+                <p>75 items</p>
+            </div>
+
+            <!-- Product grid -->
+            <div class="w3-row">
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/12760 - Bálsamo Natural Geleia Real.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 12760</span><br />
+                            Bálsamo Natural Geleia Real<br />
+                            <b>4.99€</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/25479 - Copo Misturador e Colher Doseadora (Roxo).jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 25479</span><br />
+                            Copo Misturador e Colher Doseadora (Roxo)<br />
+                            <b>4.99€</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/29915 - Sistema de Limpeza de Rosto 3 em 1 SkinPro Sonic.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 29915</span><br />
+                            Sistema de Limpeza de Rosto 3 em 1 SkinPro Sonic<br />
+                            <b>49.99€</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/30609 - Escova Redonda Grande Styler.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 30609</span><br />
+                            Escova Redonda Grande Styler<br />
+                            <b>6.99€</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/45983 - Mala Shopper Dobravél Bisous.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topleft">Promoção</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 45983</span><br />
+                            Mala Shopper Dobravél Bisous<br />
+                            <s>14.99€</s><b><span style="color:rgb(255, 0, 0); margin-left: 5%;">6.99€</span></b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/34938 - Mousse Styling Advanced Care Style Smart HairX.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 34938</span><br />
+                            Mousse Styling Advanced Care Style Smart HairX<br />
+                            <b>8.99€</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/35679 - Parfum All or Nothing.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">3</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 35679</span><br />
+                            Parfum All or Nothing<br />
+                            <b>49.99€</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/35759 - After Sun Jelly para Corpo + Rosto Sun 360.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">4</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 35759</span><br />
+                            After Sun Jelly para Corpo + Rosto Sun 360<br />
+                            <b>8.99€</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="w3-row">
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/35910 - Limpeza Energizante com Alperce e Laranja Biológicos Love Nature.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 35910</span><br />
+                            Gel Limpeza Alperce e Laranja Love Nature<br />
+                            <b>8.99€</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/35911 - Gel de Rosto Radiance com Alperce e Laranja Biológicos Love Nature.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 35911</span><br />
+                            Gel de Rosto Alperce e Laranja Love Nature<br />
+                            <b>6.99€</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/38508 - Eau de Parfum Lost in You para Ela.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 38508</span><br />
+                            Eau de Parfum Lost in You para Ela<br />
+                            <b>21.99€</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/38533 - Eau de Parfum Good as Gold Woman Giordani Gold.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">2</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 38533</span><br />
+                            Eau de Parfum Good as Gold GG<br />
+                            <b>32.99€</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/38534 - Parfum Essenza Blossom Giordani Gold.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 38534</span><br />
+                            Parfum Essenza Blossom Giordani Gold<br />
+                            <b>36.99€</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/38575 - Eau de Parfum Wild Hearts Swedish Experience .SE.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">2</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 38575</span><br />
+                            Eau de Parfum Wild Hearts Swedish Experience<br />
+                            <b>21.99€</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/38864 - Batom Irresistible Touch High Shine THE ONE.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 38864</span><br />
+                            Batom Irresistible Touch High Shine THE ONE<br />
+                            <b>8.99€</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/38865 - Batom Irresistible Touch High Shine THE ONE.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 38865</span><br />
+                            Batom Irresistible Touch High Shine THE ONE<br />
+                            <b>8.99€</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="w3-row">
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/41141 - Creme de Mãos Berry Merry.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">?</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 41141</span><br />
+                            Creme de Mãos Berry Merry<br />
+                            <b>2.99€</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/44280 - Creme Cuidado de Mãos com Óleo de Abacate Biológico Love Nature.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">?</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 44280</span><br />
+                            Creme Cuidado de Mãos com Óleo de Abacate Biológico Love Nature<br />
+                            <b>2.99€</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/44485 - Polar 3 pack Earring Set.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 44485</span><br />
+                            Polar 3 pack Earring Set<br />
+                            <b>4.99€</b>
+                        </p>
+                    </div>
+                </div>
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/45177 - CrossBody Urban.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 45177</span><br />
+                            CrossBody Urban<br />
+                            <b>24.99€</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/40670 - Primer Aperfeiçoador Woke Up Like This Waunt.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 40670</span><br />
+                            Primer Aperfeiçoador Woke Up Like This Waunt<br />
+                            <b>€16.99</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/40788 - Eau de Parfum Eclat Nuit para Ela.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 40788</span><br />
+                            Eau de Parfum Eclat Nuit para Ela<br />
+                            <b>27.99€</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/40797 - Eau de Toilette Signature Generation for Him.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 40797</span><br />
+                            Eau de Toilette Signature Generation for Him<br />
+                            <b>31.99€</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/41099 - Sabonete Berry Merry.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">?</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 41099</span><br />
+                            Sabonete Berry Merry<br />
+                            <b>1.99€</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/41277 - Sabonete Esfoliante e Energizante com Menta e Framboesa Biológicos Love Nature.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 41277</span><br />
+                            Sabonete Esfoliante Menta e Framboesa Love Nature<br />
+                            <b>2.49€</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/41335 - Creme Protetor de Mãos e Unhas com Óleo de Macadâmia Biológico Love Nature.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">?</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 41335</span><br />
+                            Creme Protetor de Mãos com Óleo de Macadâmia Love Nature<br />
+                            <b>2.99€</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/41364 - Gel Creme Hidratante Water Burst Dewy Waunt.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 41364</span><br />
+                            Gel Creme Hidratante Water Burst Dewy Waunt<br />
+                            <b>19.99€</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/41365 - Creme de Dia Super Recover Whipped Waunt.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 41365</span><br />
+                            Creme de Dia Super Recover Whipped Waunt<br />
+                            <b>19.99€</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/41374 - Manteiga de Limpeza Level Up Waunt.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 41374</span><br />
+                            Manteiga de Limpeza Level Up Waunt<br />
+                            <b>13.99€</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/41382 - Máscara Purificante Efeito Calor Mission Impurities Waunt.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 41382</span><br />
+                            Máscara Purificante Efeito Calor Mission Impurities Waunt<br />
+                            <b>16.99€</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/41493 - Gel de Duche Esfoliante e Energizante com Menta e Framboesa Biológicas Love Nature.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 41493</span><br />
+                            Gel de Duche Esfoliante Menta e Framboesa Love Nature<br />
+                            <b>6.99€</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/41563 - Máscara Facial em Tecido Biocelulose Niacinamida & Cica ProCeuticals NovAge.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 41563</span><br />
+                            Máscara Facial em Tecido ProCeuticals NovAge<br />
+                            <b>8.99€</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/41710 - Motiv Bowling Bag.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topleft">Promoção</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 41710</span><br />
+                            Motiv Bowling Bag<br />
+                            <s>39.99€</s><b><span style="color:rgb(255, 0, 0); margin-left: 5%;">15.00€</span></b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/41942 - Mochila Puma x Oriflame.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">2</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 41942</span><br />
+                            Mochila Puma x Oriflame<br />
+                            <b>25.99€</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/42058 - Relógio Amore para Ele.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 42058</span><br />
+                            Relógio Amore para Ele<br />
+                            <b>19.99€</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/42206 - Creme de Corpo Perfumado Essenza Giordani Gold.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 42206</span><br />
+                            Creme de Corpo Perfumado Essenza Giordani Gold<br />
+                            <b>6.99€</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="w3-row">
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/42469 - Creme de Mãos Love Magnet.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 42469</span><br />
+                            Creme de Mãos Love Magnet<br />
+                            <b>3.99€</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/42503 - Parfum Essenza Giordani Gold.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 42503</span><br />
+                            Parfum Essenza Giordani Gold<br />
+                            <b>39.99€</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/42739 - Eau de Toilette Glacier Fire.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topleft">Promoção</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 42739</span><br />
+                            Eau de Toilette Glacier Fire<br />
+                            <s>22.99€</s><b><span style="color:rgb(255, 0, 0); margin-left: 5%;">15.99€</span></b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/43696 - Parfum Acorde Único 1 All or Nothing.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topleft">Promoção</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 43696</span><br />
+                            Parfum Acorde Único #1 All or Nothing<br />
+                            <s>31.00€</s><b><span style="color:rgb(255, 0, 0); margin-left: 5%;">16.99€</span></b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/43747 - Moderne Clutch.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topleft">Promoção</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 43747</span><br />
+                            Moderne Clutch<br />
+                            <s>35.00€</s><b><span style="color:rgb(255, 0, 0); margin-left: 5%;">15.00€</span></b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/43954 - Bruma Perfumada Energizante com Menta e Framboesa Biológicas Love Nature.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 43954</span><br />
+                            Bruma Perfumada Menta e Framboesa Love Nature<br />
+                            <b>12.99€</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/44300 - Eau de Parfum Love Potion Sensual Ruby.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">3</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 44300</span><br />
+                            Eau de Parfum Love Potion Sensual Ruby<br />
+                            <b>22.99€</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/44599 - Conjunto de Bandas de Resistência.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 44599</span><br />
+                            Conjunto de Bandas de Resistência<br />
+                            <b>7.99€</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/45173 - Accolade Handbag.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">2</span>
+                            <span class="w3-tag w3-display-topleft">Promoção</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 45173</span><br />
+                            Accolade Handbag<br />
+                            <s>39.99€</s><b><span style="color:rgb(255, 0, 0); margin-left: 5%;">19.99€</span></b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/45253 - Esfoliante Capilar Purificante com Carvão Vegetal e Menta Biológicos Love Nature.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">2</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 45253</span><br />
+                            Esfoliante Capilar Carvão Vegetal e Menta Love Nature<br />
+                            <b>2.99€</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/45275 - Pincel Hidratação SkinPro.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topleft">Promoção</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 45275</span><br />
+                            Pincel Hidratação SkinPro<br />
+                            <s>9.50€</s><b><span style="color:rgb(255, 0, 0); margin-left: 5%;">4.75€</span></b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/45276 - Espátula Máscara SkinPro.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topleft">Promoção</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 45276</span><br />
+                            Espátula Máscara SkinPro<br />
+                            <s>13.00€</s><b><span style="color:rgb(255, 0, 0); margin-left: 5%;">6.50€</span></b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/45277 - Espátula Creme de Rosto SkinPro.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">2</span>
+                            <span class="w3-tag w3-display-topleft">Promoção</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 45277</span><br />
+                            Espátula Creme de Rosto SkinPro<br />
+                            <s>8.00€</s><b><span style="color:rgb(255, 0, 0); margin-left: 5%;">4.00€</span></b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/45297 - Relógio Jubilee para Ela.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 45297</span><br />
+                            Relógio Jubilee para Ela<br />
+                            <b>39.99€</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/45492 - Brincos Anemone Topaz.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 45492</span><br />
+                            Brincos Anemone Topaz<br />
+                            <b>22.99€</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/45736 - Tapete de Limpeza para Pincel de Maquilhagem.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 45736</span><br />
+                            Tapete de Limpeza para Pincel de Maquilhagem<br />
+                            <b>5.99€</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="w3-row">
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/45767 - Conjunto Delight Stone.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 45767</span><br />
+                            Conjunto Delight Stone<br />
+                            <b>17.99€</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/45789 - Toalha de Mesa Delight.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 45789</span><br />
+                            Toalha de Mesa Delight<br />
+                            <b>21.99€</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/45895 - Nécessaire Cuidados do Rosto.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 45895</span><br />
+                            Nécessaire Cuidados do Rosto<br />
+                            <b>13.99€</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/45984 - Conjunto de Meias Amare.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topleft">Promoção</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 45984</span><br />
+                            Conjunto de Meias Amare<br />
+                            <s>16.99€</s><b><span style="color:rgb(255, 0, 0); margin-left: 5%;">8.50€</span></b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/46011 - Ganchos Arctic Ritual.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">2</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 46011</span><br />
+                            Ganchos Arctic Ritual<br />
+                            <b>3.99€</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/33027 - Creme para Calcanhares Gretados Repair & Smooth Feet Up Advanced.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 33027</span><br />
+                            Creme para Calcanhares Gretados Repair & Smooth Feet Up Advanced<br />
+                            <b>7.99€</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/46415 - Massajador Linha do Maxilar Arctic Ritual.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 46415</span><br />
+                            Massajador Linha do Maxilar Arctic Ritual<br />
+                            <b>4.99€</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/45728 - Beauty headband.png" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 45728</span><br />
+                            Beauty headband<br />
+                            <b>6.99€</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="w3-row">
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/46020 - Água Micelar Calmante com Aveia e Bagas Goji Biológicas Love Nature.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 46020</span><br />
+                            Água Micelar Calmante com Aveia e Bagas Goji Love Nature<br />
+                            <b>7.49€</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/44551 - Óleo de Lábios Lip Spa THE ONE - NUDE.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 44551</span><br />
+                            Óleo de Lábios Lip Spa THE ONE - NUDE<br />
+                            <b>6.99€</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/143555 -  Conjunto Be The Legend Para Ele.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">4</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 143555</span><br />
+                            Conjunto Be The Legend Para Ele<br />
+                            <b>22.99€</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/34076 - Deo Roll-On Antitranspirante Be The Legend.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 34076</span><br />
+                            Deo Roll-On Antitranspirante Be The Legend<br />
+                            <b>4.99€</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/30468 -  Eau de Toilette Be The Legend Para Ele.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 30468</span><br />
+                            Eau de Toilette Be The Legend Para Ele<br />
+                            <b>19.99€</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/139377 - Conjunto Eclat Homme.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">3</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 139377</span><br />
+                            Conjunto Eclat Homme<br />
+                            <b>22.99€</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/31698 - Spray Desodorizante Antitranspirante Eclat Homme.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 31698</span><br />
+                            Spray Desodorizante Antitranspirante Eclat Homme<br />
+                            <b>6.99€</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/42864 - Eau The Toilette Eclat Homme.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 42864</span><br />
+                            Eau The Toilette Eclat Homme<br />
+                            <b>19.99€</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/139376 - Conjunto Excite Force.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">6</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 139376</span><br />
+                            Conjunto Excite Force<br />
+                            <b>22.99€</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/31639 - Eau The Toilette Excite Force.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 31639</span><br />
+                            Eau The Toilette Excite Force<br />
+                            <b>19.99€</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/145128 - Conjunto SubZero North for Men.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">2</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 145128</span><br />
+                            Conjunto SubZero North for Men<br />
+                            <b>14.99€</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/33350 - Spray Desodorizante Antitranspirante Excite Force.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 33350</span><br />
+                            Spray Desodorizante Excite Force<br />
+                            <b>6.99€</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/141492 - Conjunto Eclat Mon Parfum.png" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 141492</span><br />
+                            Conjunto Eclat Mon Parfum<br />
+                            <b>29.99€</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/29446 - Conjunto NovAge Men.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 29446</span><br />
+                            Conjunto NovAge Men<br />
+                            <b>77.00€</b>
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="content/imgs/produtos/42523 - Creme de Corpo Eclat Mon Parfum.jpg" style="width: 90%;" />
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topleft">Promoção</span>
+                        </div>
+                        <p> <span style="font-size: smaller;">Ref: 42523</span><br />
+                            Creme de Corpo Eclat Mon Parfum<br />
+                            <s>16.00€</s><b><span style="color:rgb(255, 0, 0); margin-left: 5%;">5.99€</span></b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Footer -->
+            <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+                <div class="w3-row-padding">
+                        <h3>Store</h3>
+                        <p><i class="fa fa-fw fa-map-marker"></i> Beatriz Miranda</p>
+                        <p><i class="fa fa-fw fa-phone"></i> +351 968 626 629</p>
+                        <p><i class="fa fa-fw fa-envelope"></i> beatrizmiranda1@live.com.pt</p>
+                        <h3>We accept</h3>
+                        <p><i class="fa fa-fw fa-mobile"></i> MBWay</p>
+                        <p><i class="fa fa-fw fa-credit-card"></i> Transferência Bancária</p>
+                        <br />
+                        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+                        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+                </div>
+            </footer>
+
+            <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://backalfa.github.io/CV/Index.html" title="W3.CSS" target="_blank" class="w3-hover-opacity">Miguel Sá</a></div>
+
+            <!-- End page content -->
+        </div>
+
+        <script>
+            // Accordion
+            function myAccFunc() {
+                var x = document.getElementById("demoAcc");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+
+            // Click on the "Jeans" link on page load to open the accordion for demo purposes
+            document.getElementById("myBtn").click();
+
+            // Open and close sidebar
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+        </script>
+    </body>
+</html>
