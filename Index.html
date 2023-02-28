@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <script src="content/js/filtros.js"></script>
         <style>
             .w3-sidebar a {
                 font-family: "Roboto", sans-serif;
@@ -18,7 +19,7 @@
             }
         </style>
     </head>
-    <body class="w3-content" style="max-width: 1200px;">
+    <body class="w3-content" style="max-width: 1200px;" onload="count()">
         <!-- Sidebar/menu -->
         <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index: 3; width: 250px;" id="mySidebar">
             <div class="w3-container w3-display-container w3-padding-16">
@@ -63,13 +64,30 @@
                 <div class="w3-display-topleft w3-text-black" style="padding: 24px 48px;">
                     <h1 class="w3-jumbo w3-hide-small">ORIFLAME</h1>
                     <h1 class="w3-hide-large w3-hide-medium">ORIFLAME</h1>
-                    <h1 class="w3-hide-small">COLLECTION 2023</h1>
-                    <p><a href="#promo" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
+                    <h1 class="w3-hide-small">COLEÇÃO 2023</h1>
+                    <p><a href="#promo" class="w3-button w3-black w3-padding-large w3-large">COMPRAR AGORA</a></p>
                 </div>
             </div>
 
             <div class="w3-container w3-text-grey" id="promo">
-                <p>75 items</p>
+                <p>
+                    Filtros: 
+                    <p style="margin-left: 5%;">
+                        <span style="margin-left: 5%;">
+                            <select name="produto" id="produto" onchange="filtro()">
+                                <option value="0" selected>Todos os Produtos</option>
+                                <option value="1">Perfumes/Deo Roll-on</option>
+                                <option value="2">Cremes</option>
+                                <option value="3">Conjuntos</option>
+                                <option value="4">Acessórios</option>
+                                <option value="5">Maquilhagem</option>
+                                <option value="6">Cabelo</option>
+                                <option value="7">Promoções</option>
+                            </select>
+                        </span>
+                    </p>
+                </p>
+                <p><span id="countitens"></span></p>
             </div>
 
             <!-- Product grid -->
@@ -79,6 +97,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/12760 - Bálsamo Natural Geleia Real.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 12760</span><br />
                             Bálsamo Natural Geleia Real<br />
@@ -89,6 +111,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/25479 - Copo Misturador e Colher Doseadora (Roxo).jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 25479</span><br />
                             Copo Misturador e Colher Doseadora (Roxo)<br />
@@ -101,6 +127,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/29915 - Sistema de Limpeza de Rosto 3 em 1 SkinPro Sonic.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 29915</span><br />
                             Sistema de Limpeza de Rosto 3 em 1 SkinPro Sonic<br />
@@ -111,6 +141,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/30609 - Escova Redonda Grande Styler.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 30609</span><br />
                             Escova Redonda Grande Styler<br />
@@ -123,7 +156,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/45983 - Mala Shopper Dobravél Bisous.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
-                            <span class="w3-tag w3-display-topleft">Promoção</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
+                            <span class="w3-tag w3-display-topleft" style="background-color: rgb(255, 0, 0);">Promoção</span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 45983</span><br />
                             Mala Shopper Dobravél Bisous<br />
@@ -134,6 +170,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/34938 - Mousse Styling Advanced Care Style Smart HairX.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 34938</span><br />
                             Mousse Styling Advanced Care Style Smart HairX<br />
@@ -146,6 +185,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/35679 - Parfum All or Nothing.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">3</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 35679</span><br />
                             Parfum All or Nothing<br />
@@ -156,6 +198,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/35759 - After Sun Jelly para Corpo + Rosto Sun 360.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">4</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 35759</span><br />
                             After Sun Jelly para Corpo + Rosto Sun 360<br />
@@ -170,6 +216,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/35910 - Limpeza Energizante com Alperce e Laranja Biológicos Love Nature.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 35910</span><br />
                             Gel Limpeza Alperce e Laranja Love Nature<br />
@@ -180,6 +230,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/35911 - Gel de Rosto Radiance com Alperce e Laranja Biológicos Love Nature.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 35911</span><br />
                             Gel de Rosto Alperce e Laranja Love Nature<br />
@@ -192,6 +246,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/38534 - Parfum Essenza Blossom Giordani Gold.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 38534</span><br />
                             Parfum Essenza Blossom Giordani Gold<br />
@@ -202,6 +259,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/38575 - Eau de Parfum Wild Hearts Swedish Experience .SE.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">2</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 38575</span><br />
                             Eau de Parfum Wild Hearts Swedish Experience<br />
@@ -214,6 +274,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/38508 - Eau de Parfum Lost in You para Ela.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 38508</span><br />
                             Eau de Parfum Lost in You para Ela<br />
@@ -224,6 +287,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/38533 - Eau de Parfum Good as Gold Woman Giordani Gold.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">2</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 38533</span><br />
                             Eau de Parfum Good as Gold GG<br />
@@ -236,6 +302,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/38864 - Batom Irresistible Touch High Shine THE ONE.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 38864</span><br />
                             Batom Irresistible Touch High Shine THE ONE<br />
@@ -246,6 +315,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/38865 - Batom Irresistible Touch High Shine THE ONE.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 38865</span><br />
                             Batom Irresistible Touch High Shine THE ONE<br />
@@ -260,6 +332,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/45177 - CrossBody Urban.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 45177</span><br />
                             CrossBody Urban<br />
@@ -270,6 +345,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/40670 - Primer Aperfeiçoador Woke Up Like This Waunt.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 40670</span><br />
                             Primer Aperfeiçoador Woke Up Like This Waunt<br />
@@ -282,6 +360,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/40788 - Eau de Parfum Eclat Nuit para Ela.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 40788</span><br />
                             Eau de Parfum Eclat Nuit para Ela<br />
@@ -292,6 +373,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/40797 - Eau de Toilette Signature Generation for Him.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 40797</span><br />
                             Eau de Toilette Signature Generation for Him<br />
@@ -303,7 +387,11 @@
                     <div class="w3-container">
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/41099 - Sabonete Berry Merry.jpg" style="width: 90%;" />
-                            <span class="w3-tag" style="position: absolute; bottom: 0;">?</span>
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">4</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 41099</span><br />
                             Sabonete Berry Merry<br />
@@ -314,6 +402,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/41277 - Sabonete Esfoliante e Energizante com Menta e Framboesa Biológicos Love Nature.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 41277</span><br />
                             Sabonete Esfoliante Menta e Framboesa Love Nature<br />
@@ -325,7 +417,11 @@
                     <div class="w3-container">
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/41335 - Creme Protetor de Mãos e Unhas com Óleo de Macadâmia Biológico Love Nature.jpg" style="width: 90%;" />
-                            <span class="w3-tag" style="position: absolute; bottom: 0;">?</span>
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">3</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 41335</span><br />
                             Creme Protetor de Mãos com Óleo de Macadâmia Love Nature<br />
@@ -336,6 +432,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/41364 - Gel Creme Hidratante Water Burst Dewy Waunt.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 41364</span><br />
                             Gel Creme Hidratante Water Burst Dewy Waunt<br />
@@ -350,6 +450,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/41365 - Creme de Dia Super Recover Whipped Waunt.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 41365</span><br />
                             Creme de Dia Super Recover Whipped Waunt<br />
@@ -360,6 +464,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/41374 - Manteiga de Limpeza Level Up Waunt.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 41374</span><br />
                             Manteiga de Limpeza Level Up Waunt<br />
@@ -372,6 +480,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/41382 - Máscara Purificante Efeito Calor Mission Impurities Waunt.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 41382</span><br />
                             Máscara Purificante Efeito Calor Mission Impurities Waunt<br />
@@ -382,6 +494,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/41493 - Gel de Duche Esfoliante e Energizante com Menta e Framboesa Biológicas Love Nature.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 41493</span><br />
                             Gel de Duche Esfoliante Menta e Framboesa Love Nature<br />
@@ -394,6 +510,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/41563 - Máscara Facial em Tecido Biocelulose Niacinamida & Cica ProCeuticals NovAge.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 41563</span><br />
                             Máscara Facial em Tecido ProCeuticals NovAge<br />
@@ -404,7 +524,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/41710 - Motiv Bowling Bag.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
-                            <span class="w3-tag w3-display-topleft">Promoção</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
+                            <span class="w3-tag w3-display-topleft" style="background-color: rgb(255, 0, 0);">Promoção</span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 41710</span><br />
                             Motiv Bowling Bag<br />
@@ -417,6 +540,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/41942 - Mochila Puma x Oriflame.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">2</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 41942</span><br />
                             Mochila Puma x Oriflame<br />
@@ -427,6 +553,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/42058 - Relógio Amore para Ele.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 42058</span><br />
                             Relógio Amore para Ele<br />
@@ -441,7 +570,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/43696 - Parfum Acorde Único 1 All or Nothing.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
-                            <span class="w3-tag w3-display-topleft">Promoção</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
+                            <span class="w3-tag w3-display-topleft" style="background-color: rgb(255, 0, 0);">Promoção</span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 43696</span><br />
                             Parfum Acorde Único #1 All or Nothing<br />
@@ -452,7 +584,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/43747 - Moderne Clutch.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
-                            <span class="w3-tag w3-display-topleft">Promoção</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
+                            <span class="w3-tag w3-display-topleft" style="background-color: rgb(255, 0, 0);">Promoção</span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 43747</span><br />
                             Moderne Clutch<br />
@@ -465,6 +600,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/42206 - Creme de Corpo Perfumado Essenza Giordani Gold.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 42206</span><br />
                             Creme de Corpo Perfumado Essenza Giordani Gold<br />
@@ -475,6 +613,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/42469 - Creme de Mãos Love Magnet.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 42469</span><br />
                             Creme de Mãos Love Magnet<br />
@@ -487,6 +629,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/42503 - Parfum Essenza Giordani Gold.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 42503</span><br />
                             Parfum Essenza Giordani Gold<br />
@@ -497,7 +642,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/42739 - Eau de Toilette Glacier Fire.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
-                            <span class="w3-tag w3-display-topleft">Promoção</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                            </span>
+                            <span class="w3-tag w3-display-topleft" style="background-color: rgb(255, 0, 0);">Promoção</span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 42739</span><br />
                             Eau de Toilette Glacier Fire<br />
@@ -510,6 +658,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/43954 - Bruma Perfumada Energizante com Menta e Framboesa Biológicas Love Nature.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 43954</span><br />
                             Bruma Perfumada Menta e Framboesa Love Nature<br />
@@ -520,6 +671,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/44300 - Eau de Parfum Love Potion Sensual Ruby.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">3</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 44300</span><br />
                             Eau de Parfum Love Potion Sensual Ruby<br />
@@ -534,6 +688,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/44599 - Conjunto de Bandas de Resistência.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 44599</span><br />
                             Conjunto de Bandas de Resistência<br />
@@ -544,7 +702,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/45173 - Accolade Handbag.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">2</span>
-                            <span class="w3-tag w3-display-topleft">Promoção</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
+                            <span class="w3-tag w3-display-topleft" style="background-color: rgb(255, 0, 0);">Promoção</span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 45173</span><br />
                             Accolade Handbag<br />
@@ -557,6 +718,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/45253 - Esfoliante Capilar Purificante com Carvão Vegetal e Menta Biológicos Love Nature.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">2</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 45253</span><br />
                             Esfoliante Capilar Carvão Vegetal e Menta Love Nature<br />
@@ -567,7 +732,11 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/45275 - Pincel Hidratação SkinPro.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
-                            <span class="w3-tag w3-display-topleft">Promoção</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
+                            <span class="w3-tag w3-display-topleft" style="background-color: rgb(255, 0, 0);">Promoção</span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 45275</span><br />
                             Pincel Hidratação SkinPro<br />
@@ -580,7 +749,11 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/45276 - Espátula Máscara SkinPro.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
-                            <span class="w3-tag w3-display-topleft">Promoção</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
+                            <span class="w3-tag w3-display-topleft" style="background-color: rgb(255, 0, 0);">Promoção</span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 45276</span><br />
                             Espátula Máscara SkinPro<br />
@@ -591,7 +764,11 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/45277 - Espátula Creme de Rosto SkinPro.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">2</span>
-                            <span class="w3-tag w3-display-topleft">Promoção</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
+                            <span class="w3-tag w3-display-topleft" style="background-color: rgb(255, 0, 0);">Promoção</span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 45277</span><br />
                             Espátula Creme de Rosto SkinPro<br />
@@ -604,6 +781,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/45297 - Relógio Jubilee para Ela.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 45297</span><br />
                             Relógio Jubilee para Ela<br />
@@ -614,6 +794,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/45492 - Brincos Anemone Topaz.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 45492</span><br />
                             Brincos Anemone Topaz<br />
@@ -628,7 +811,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/45984 - Conjunto de Meias Amare.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
-                            <span class="w3-tag w3-display-topleft">Promoção</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
+                            <span class="w3-tag w3-display-topleft" style="background-color: rgb(255, 0, 0);">Promoção</span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 45984</span><br />
                             Conjunto de Meias Amare<br />
@@ -639,6 +825,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/46011 - Ganchos Arctic Ritual.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">2</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 46011</span><br />
                             Ganchos Arctic Ritual<br />
@@ -651,6 +840,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/45736 - Tapete de Limpeza para Pincel de Maquilhagem.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 45736</span><br />
                             Tapete de Limpeza para Pincel de Maquilhagem<br />
@@ -661,6 +854,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/45767 - Conjunto Delight Stone.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 45767</span><br />
                             Conjunto Delight Stone<br />
@@ -673,6 +869,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/45789 - Toalha de Mesa Delight.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 45789</span><br />
                             Toalha de Mesa Delight<br />
@@ -683,6 +883,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/45895 - Nécessaire Cuidados do Rosto.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 45895</span><br />
                             Nécessaire Cuidados do Rosto<br />
@@ -695,6 +899,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/33027 - Creme para Calcanhares Gretados Repair & Smooth Feet Up Advanced.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 33027</span><br />
                             Creme para Calcanhares Gretados Repair & Smooth Feet Up Advanced<br />
@@ -705,6 +913,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/46415 - Massajador Linha do Maxilar Arctic Ritual.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 46415</span><br />
                             Massajador Linha do Maxilar Arctic Ritual<br />
@@ -719,6 +931,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/34076 - Deo Roll-On Antitranspirante Be The Legend.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 34076</span><br />
                             Deo Roll-On Antitranspirante Be The Legend<br />
@@ -729,6 +944,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/30468 -  Eau de Toilette Be The Legend Para Ele.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 30468</span><br />
                             Eau de Toilette Be The Legend Para Ele<br />
@@ -741,6 +959,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/45728 - Beauty headband.png" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 45728</span><br />
                             Beauty headband<br />
@@ -751,6 +972,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/46020 - Água Micelar Calmante com Aveia e Bagas Goji Biológicas Love Nature.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 46020</span><br />
                             Água Micelar Calmante com Aveia e Bagas Goji Love Nature<br />
@@ -763,6 +988,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/44551 - Óleo de Lábios Lip Spa THE ONE - NUDE.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 44551</span><br />
                             Óleo de Lábios Lip Spa THE ONE - NUDE<br />
@@ -773,6 +1001,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/143555 -  Conjunto Be The Legend Para Ele.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">4</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 143555</span><br />
                             Conjunto Be The Legend Para Ele<br />
@@ -785,6 +1016,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/139377 - Conjunto Eclat Homme.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">3</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 139377</span><br />
                             Conjunto Eclat Homme<br />
@@ -795,6 +1029,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/31698 - Spray Desodorizante Antitranspirante Eclat Homme.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 31698</span><br />
                             Spray Desodorizante Antitranspirante Eclat Homme<br />
@@ -809,6 +1046,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/42864 - Eau The Toilette Eclat Homme.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 42864</span><br />
                             Eau The Toilette Eclat Homme<br />
@@ -819,6 +1059,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/139376 - Conjunto Excite Force.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">6</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 139376</span><br />
                             Conjunto Excite Force<br />
@@ -831,6 +1074,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/31639 - Eau The Toilette Excite Force.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 31639</span><br />
                             Eau The Toilette Excite Force<br />
@@ -841,6 +1087,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/145128 - Conjunto SubZero North for Men.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">2</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 145128</span><br />
                             Conjunto SubZero North for Men<br />
@@ -853,6 +1102,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/33350 - Spray Desodorizante Antitranspirante Excite Force.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 33350</span><br />
                             Spray Desodorizante Excite Force<br />
@@ -863,6 +1115,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/141492 - Conjunto Eclat Mon Parfum.png" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 141492</span><br />
                             Conjunto Eclat Mon Parfum<br />
@@ -876,7 +1131,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/29446 - Conjunto NovAge Men.jpg" style="width: 90%;" />
                             <!--<span class="w3-tag" style="position: absolute; bottom: 0;">1</span>-->
-                            <span class="w3-tag" style="position: absolute; top: 0;left:0; background-color: red;">Esgotado!</span>
+                            <span class="w3-tag" style="position: absolute; top: 0;left:0;">Vendido!</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 29446</span><br />
                             Conjunto NovAge Men<br />
@@ -887,7 +1145,10 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/42523 - Creme de Corpo Eclat Mon Parfum.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
-                            <span class="w3-tag w3-display-topleft">Promoção</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
+                            <span class="w3-tag w3-display-topleft" style="background-color: rgb(255, 0, 0);">Promoção</span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 42523</span><br />
                             Creme de Corpo Eclat Mon Parfum<br />
@@ -901,7 +1162,11 @@
                     <div class="w3-container">
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/41141 - Creme de Mãos Berry Merry.jpg" style="width: 90%;" />
-                            <span class="w3-tag" style="position: absolute; bottom: 0;">?</span>
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">4</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 41141</span><br />
                             Creme de Mãos Berry Merry<br />
@@ -913,7 +1178,11 @@
                     <div class="w3-container">
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/44280 - Creme Cuidado de Mãos com Óleo de Abacate Biológico Love Nature.jpg" style="width: 90%;" />
-                            <span class="w3-tag" style="position: absolute; bottom: 0;">?</span>
+                            <span class="w3-tag" style="position: absolute; bottom: 0;">2</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 44280</span><br />
                             Creme Cuidado de Mãos com Óleo de Abacate Biológico Love Nature<br />
@@ -926,6 +1195,9 @@
                         <div class="w3-display-container">
                             <img src="content/imgs/produtos/44485 - Polar 3 pack Earring Set.jpg" style="width: 90%;" />
                             <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag w3-display-topright" style="background-color: transparent;">
+                                <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
+                            </span>
                         </div>
                         <p> <span style="font-size: smaller;">Ref: 44485</span><br />
                             Polar 3 pack Earring Set<br />
@@ -939,16 +1211,13 @@
             <!-- Footer -->
             <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
                 <div class="w3-row-padding">
-                        <h3>We accept</h3>
+                        <h3>Métodos de Pagamento</h3>
                         <p><i class="fa fa-fw fa-mobile"></i> MBWay</p>
                         <p><i class="fa fa-fw fa-credit-card"></i> Transferência Bancária</p>
                         <br />
                     </div>
                 </div>
             </footer>
-
-            <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://backalfa.github.io/CV/Index.html" title="W3.CSS" target="_blank" class="w3-hover-opacity">Miguel Sá</a></div>
-
             <!-- End page content -->
         </div>
 
