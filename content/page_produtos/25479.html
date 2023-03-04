@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Beatriz Miranda Oriflame</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="website icon" type="png" href="../imgs/icontab.png">
+        <link rel="stylesheet" href="../css/stylemain.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <script src="../js/filtros.js"></script>
+        <style>
+            .w3-sidebar a {
+                font-family: "Roboto", sans-serif;
+            }
+            body, h1, h2, h3, h4, h5, h6, .w3-wide {
+                font-family: "Montserrat", sans-serif;
+            }
+            html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+            .mySlides {display:none}
+            .w3-tag, .fa {cursor:pointer}
+            .w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+        </style>
+        <style>
+            .accordion-header:hover {
+                background-color: #eee;
+                cursor: pointer;
+            }
+
+            .accordion-content {
+                padding: 10px;
+                display: none;
+            }
+
+            .accordion-content.show {
+                display: block;
+            }
+
+        </style>
+        <style>
+            .header-inline{
+                display: inline-block;
+            }
+            .go-to-left{
+                float: left;
+            }
+            .go-to-right{
+                float: right;
+            }
+        </style>
+    </head>
+    <body class="w3-content" style="max-width: 1200px;">
+        <!-- Sidebar/menu -->
+        <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index: 3; width: 250px;" id="mySidebar">
+            <div class="w3-container w3-display-container w3-padding-16">
+                <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+                <img src="../imgs/LOGO.jpg" style="width: 100%;">
+            </div>
+            <a href="https://pt.oriflame.com/products/digital-catalogue-current?PageNumber=1" class="w3-bar-item w3-button w3-padding" target="_blank">Catálogo Atual</a>
+            <a href="https://pt.oriflame.com/catalogue?cataloguecode=Norrsken%2F2023-norrsken-spring" class="w3-bar-item w3-button w3-padding" target="_blank">NORRSKEN- Jóias</a>
+            <a href="https://pt.oriflame.com/catalogue?cataloguecode=FlyerC04&PageNumber=1" class="w3-bar-item w3-button w3-padding" target="_blank">Oportunidades</a>
+            <a href="#promo" class="w3-bar-item w3-button w3-padding">Produtos Disponíveis</a><br><br>
+            <div style="text-align: center;">
+                <img src="../QrCode.png" style="width: 100%;">
+            </div>
+        </nav>
+
+        <!-- Top menu on small screens -->
+        <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+            <div class="w3-bar-item w3-padding-24 w3-wide">
+            </div>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+        </header>
+
+        <!-- Overlay effect when opening sidebar on small screens -->
+        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer;" title="close side menu" id="myOverlay"></div>
+
+        <!-- !PAGE CONTENT! -->
+        <div class="w3-main" style="margin-left: 250px;">
+            <!-- Push down content on small screens -->
+            <div class="w3-hide-large" style="margin-top: 83px;"></div>
+
+            <!-- Top header -->
+            <header class="w3-container w3-xlarge" style="padding: 35px;">
+                <div class="header-inline go-to-left">
+                    <a href="../../Index.html"><i class="fa fa-reply"></i></a>
+                </div>
+                <div class="header-inline go-to-right">
+                    <i class="fa fa-shopping-cart w3-margin-right"></i>
+                    <i class="fa fa-search"></i>
+                </div>
+            </header>
+
+            <!-- Content Page -->
+
+            <div class="w3-row">
+                <h2 style="color: #606060; position: relative; margin-left: 5%;">Copo Misturador e Colher Doseadora (Roxo)</h2>
+                <div class="w3-col l5 s12" style="position: relative; display: block; top: 0;">
+                    <div class="w3-container">
+                        <div class="w3-display-container mySlides" style="display: block;">
+                            <img src="imgs/25479(1).jpg" style="width:100%">
+                        </div>
+
+                        <!-- Slideshow next/previous buttons -->
+                        <div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col l7 s12">
+                    <div class="w3-container" style="color: #606060;">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3><i class="fa fa-caret-down"></i> Descrição</h3>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Uma forma fácil de preparar o seu Batido Natural Balance. Junte uma colher (0,45 dl) de Batido Natural Balance com 1,5 dl de água fria e misture.</p>
+                                </div>
+                            </div><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+                <div class="w3-row-padding">
+                        <h3>Métodos de Pagamento</h3>
+                        <p><i class="fa fa-fw fa-mobile"></i> MBWay</p>
+                        <p><i class="fa fa-fw fa-credit-card"></i> Transferência Bancária</p>
+                        <br />
+                    </div>
+                </div>
+            </footer>
+            <!-- End page content -->
+        </div>
+        <script>
+            // Slideshow
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+            showDivs(slideIndex += n);
+            }
+
+            function currentDiv(n) {
+            showDivs(slideIndex = n);
+            }
+
+            function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demodots");
+            if (n > x.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = x.length} ;
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
+            }
+            x[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " w3-white";
+            }
+        </script>
+        <script>
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    header.classList.toggle('active');
+                    const accordionContent = header.nextElementSibling;
+                    accordionContent.classList.toggle('show');
+                });
+            });
+
+        </script>
+        <script>
+            // Accordion
+            function myAccFunc() {
+                var x = document.getElementById("demoAcc");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+        
+            // Click on the "Jeans" link on page load to open the accordion for demo purposes
+             document.getElementById("myBtn").click();
+        
+            // Open and close sidebar
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+        
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+        </script>
+    </body>
+</html>

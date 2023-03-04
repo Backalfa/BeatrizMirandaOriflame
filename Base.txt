@@ -1,0 +1,527 @@
+{
+    "12760": {
+        "ref": "12760",
+        "nome": "Bálsamo Natural Geleia Real",
+        "preco": "4.99",
+        "quantidade": "1",
+        "preconovo": "4.99"
+    },
+    "25479": {
+        "ref": "25479",
+        "nome": "Copo Misturador e Colher Doseadora (Roxo)",
+        "preco": "4.99",
+        "quantidade": "1",
+        "preconovo": "4.99"
+    },
+    "29915": {
+        "ref": "29915",
+        "nome": "Sistema de Limpeza de Rosto 3 em 1 SkinPro Sonic",
+        "preco": "49.99",
+        "quantidade": "1",
+        "preconovo": "49.99"
+    },
+    "30609": {
+        "ref": "30609",
+        "nome": "Escova Redonda Grande Styler",
+        "preco": "6.99",
+        "quantidade": "1",
+        "preconovo": "6.99"
+    },
+    "45983": {
+        "ref": "45983",
+        "nome": "Mala Shopper Dobravél Bisous",
+        "preco": "14.99",
+        "quantidade": "1",
+        "preconovo": "14.99"
+    },
+    "34938": {
+        "ref": "34938",
+        "nome": "Mousse Styling Advanced Care Style Smart HairX",
+        "preco": "8.99",
+        "quantidade": "1",
+        "preconovo": "8.99"
+    },
+    "35679": {
+        "ref": "35679",
+        "nome": "Parfum All or Nothing",
+        "preco": "49.99",
+        "quantidade": "3",
+        "preconovo": "49.99"
+    },
+    "35759": {
+        "ref": "35759",
+        "nome": "After Sun Jelly para Corpo + Rosto Sun 360",
+        "preco": "8.99",
+        "quantidade": "4",
+        "preconovo": "8.99"
+    },
+    "35910": {
+        "ref": "35910",
+        "nome": "Gel Limpeza Alperce e Laranja Love Nature",
+        "preco": "8.99",
+        "quantidade": "1",
+        "preconovo": "8.99"
+    },
+    "35911": {
+        "ref": "35911",
+        "nome": "Gel de Rosto Alperce e Laranja Love Nature",
+        "preco": "6.99",
+        "quantidade": "1",
+        "preconovo": "6.99"
+    },
+    "38534": {
+        "ref": "38534",
+        "nome": "Parfum Essenza Blossom Giordani Gold",
+        "preco": "36.99",
+        "quantidade": "1",
+        "preconovo": "36.99"
+    },
+    "38575": {
+        "ref": "38575",
+        "nome": "Eau de Parfum Wild Hearts Swedish Experience",
+        "preco": "21.99",
+        "quantidade": "2",
+        "preconovo": "21.99"
+    },
+    "38508": {
+        "ref": "38508",
+        "nome": "Eau de Parfum Lost in You para Ela",
+        "preco": "21.99",
+        "quantidade": "1",
+        "preconovo": "21.99"
+    },
+    "38533": {
+        "ref": "38533",
+        "nome": "Eau de Parfum Good as Gold GG",
+        "preco": "32.99",
+        "quantidade": "2",
+        "preconovo": "32.99"
+    },
+    "38864": {
+        "ref": "38864",
+        "nome": "Batom Irresistible Touch High Shine THE ONE",
+        "preco": "8.99",
+        "quantidade": "1",
+        "preconovo": "8.99"
+    },
+    "38865": {
+        "ref": "38865",
+        "nome": "Batom Irresistible Touch High Shine THE ONE",
+        "preco": "8.99",
+        "quantidade": "1",
+        "preconovo": "8.99"
+    },
+    "45177": {
+        "ref": "45177",
+        "nome": "CrossBody Urban",
+        "preco": "24.99",
+        "quantidade": "1",
+        "preconovo": "24.99"
+    },
+    "40670": {
+        "ref": "40670",
+        "nome": "Primer Aperfeiçoador Woke Up Like This Waunt",
+        "preco": "16.99",
+        "quantidade": "1",
+        "preconovo": "16.99"
+    },
+    "40788": {
+        "ref": "40788",
+        "nome": "Eau de Parfum Eclat Nuit para Ela",
+        "preco": "27.99",
+        "quantidade": "1",
+        "preconovo": "27.99"
+    },
+    "40797": {
+        "ref": "40797",
+        "nome": "Eau de Toilette Signature Generation for Him",
+        "preco": "31.99",
+        "quantidade": "1",
+        "preconovo": "31.99"
+    },
+    "41099": {
+        "ref": "41099",
+        "nome": "Sabonete Berry Merry",
+        "preco": "1.99",
+        "quantidade": "4",
+        "preconovo": "1.99"
+    },
+    "41277": {
+        "ref": "41277",
+        "nome": "Sabonete Esfoliante Menta e Framboesa Love Nature",
+        "preco": "2.49",
+        "quantidade": "1",
+        "preconovo": "2.49"
+    },
+    "41335": {
+        "ref": "41335",
+        "nome": "Creme Protetor de Mãos com Óleo de Macadâmia Love Nature",
+        "preco": "2.99",
+        "quantidade": "3",
+        "preconovo": "2.99"
+    },
+    "41364": {
+        "ref": "41364",
+        "nome": "Gel Creme Hidratante Water Burst Dewy Waunt",
+        "preco": "19.99",
+        "quantidade": "1",
+        "preconovo": "19.99"
+    },
+    "41365": {
+        "ref": "41365",
+        "nome": "Creme de Dia Super Recover Whipped Waunt",
+        "preco": "19.99",
+        "quantidade": "1",
+        "preconovo": "19.99"
+    },
+    "41374": {
+        "ref": "41374",
+        "nome": "Manteiga de Limpeza Level Up Waunt",
+        "preco": "13.99",
+        "quantidade": "1",
+        "preconovo": "13.99"
+    },
+    "41382": {
+        "ref": "41382",
+        "nome": "Máscara Purificante Efeito Calor Mission Impurities Waunt",
+        "preco": "16.99",
+        "quantidade": "1",
+        "preconovo": "16.99"
+    },
+    "41493": {
+        "ref": "41493",
+        "nome": "Gel de Duche Esfoliante Menta e Framboesa Love Nature",
+        "preco": "6.99",
+        "quantidade": "1",
+        "preconovo": "6.99"
+    },
+    "41563": {
+        "ref": "41563",
+        "nome": "Máscara Facial em Tecido ProCeuticals NovAge",
+        "preco": "8.99",
+        "quantidade": "1",
+        "preconovo": "8.99"
+    },
+    "41710": {
+        "ref": "41710",
+        "nome": "Motiv Bowling Bag",
+        "preco": "39.99",
+        "quantidade": "1",
+        "preconovo": "15.99"
+    },
+    "41942": {
+        "ref": "41942",
+        "nome": "Mochila Puma x Oriflame",
+        "preco": "25.99",
+        "quantidade": "2",
+        "preconovo": "25.99"
+    },
+    "42058": {
+        "ref": "42058",
+        "nome": "Relógio Amore para Ele",
+        "preco": "19.99",
+        "quantidade": "1",
+        "preconovo": "19.99"
+    },
+    "43696": {
+        "ref": "43696",
+        "nome": "Parfum Acorde Único #1 All or Nothing",
+        "preco": "31.00",
+        "quantidade": "1",
+        "preconovo": "16.99"
+    },
+    "43747": {
+        "ref": "43747",
+        "nome": "Moderne Clutch",
+        "preco": "35.00",
+        "quantidade": "1",
+        "preconovo": "15.00"
+    },
+    "42206": {
+        "ref": "42206",
+        "nome": "Creme de Corpo Perfumado Essenza Giordani Gold",
+        "preco": "6.99",
+        "quantidade": "1",
+        "preconovo": "6.99"
+    },
+    "42469": {
+        "ref": "42469",
+        "nome": "Creme de Mãos Love Magnet",
+        "preco": "3.99",
+        "quantidade": "1",
+        "preconovo": "3.99"
+    },
+    "42503": {
+        "ref": "42503",
+        "nome": "Parfum Essenza Giordani Gold",
+        "preco": "39.99",
+        "quantidade": "1",
+        "preconovo": "39.99"
+    },
+    "42739": {
+        "ref": "42739",
+        "nome": "Eau de Toilette Glacier Fire",
+        "preco": "22.99",
+        "quantidade": "1",
+        "preconovo": "15.99"
+    },
+    "43954": {
+        "ref": "43954",
+        "nome": "Bruma Perfumada Menta e Framboesa Love Nature",
+        "preco": "12.99",
+        "quantidade": "1",
+        "preconovo": "12.99"
+    },
+    "44300": {
+        "ref": "44300",
+        "nome": "Eau de Parfum Love Potion Sensual Ruby",
+        "preco": "22.99",
+        "quantidade": "3",
+        "preconovo": "22.99"
+    },
+    "44599": {
+        "ref": "44599",
+        "nome": "Conjunto de Bandas de Resistência",
+        "preco": "7.99",
+        "quantidade": "1",
+        "preconovo": "7.99"
+    },
+    "45173": {
+        "ref": "45173",
+        "nome": "Accolade Handbag",
+        "preco": "39.99",
+        "quantidade": "2",
+        "preconovo": "19.99"
+    },
+    "45253": {
+        "ref": "45253",
+        "nome": "Esfoliante Capilar Carvão Vegetal e Menta Love Nature",
+        "preco": "2.99",
+        "quantidade": "2",
+        "preconovo": "2.99"
+    },
+    "45275": {
+        "ref": "45275",
+        "nome": "Pincel Hidratação SkinPro",
+        "preco": "9.50",
+        "quantidade": "1",
+        "preconovo": "4.75"
+    },
+    "45276": {
+        "ref": "45276",
+        "nome": "Espátula Máscara SkinPro",
+        "preco": "13.00",
+        "quantidade": "1",
+        "preconovo": "6.50"
+    },
+    "45277": {
+        "ref": "45277",
+        "nome": "Espátula Creme de Rosto SkinPro",
+        "preco": "8.00",
+        "quantidade": "2",
+        "preconovo": "4.00"
+    },
+    "45297": {
+        "ref": "45297",
+        "nome": "Relógio Jubilee para Ela",
+        "preco": "39.99",
+        "quantidade": "1",
+        "preconovo": "39.99"
+    },
+    "45492": {
+        "ref": "45492",
+        "nome": "Brincos Anemone Topaz",
+        "preco": "22.99",
+        "quantidade": "1",
+        "preconovo": "22.99"
+    },
+    "45984": {
+        "ref": "45984",
+        "nome": "Conjunto de Meias Amare",
+        "preco": "16.99",
+        "quantidade": "1",
+        "preconovo": "8.50"
+    },
+    "46011": {
+        "ref": "46011",
+        "nome": "Ganchos Arctic Ritual",
+        "preco": "3.99",
+        "quantidade": "2",
+        "preconovo": "3.99"
+    },
+    "45736": {
+        "ref": "45736",
+        "nome": "Tapete de Limpeza para Pincel de Maquilhagem",
+        "preco": "5.99",
+        "quantidade": "1",
+        "preconovo": "5.99"
+    },
+    "45767": {
+        "ref": "45767",
+        "nome": "Conjunto Delight Stone",
+        "preco": "17.99",
+        "quantidade": "1",
+        "preconovo": "17.99"
+    },
+    "45789": {
+        "ref": "45789",
+        "nome": "Toalha de Mesa Delight",
+        "preco": "21.99",
+        "quantidade": "1",
+        "preconovo": "21.99"
+    },
+    "45895": {
+        "ref": "45895",
+        "nome": "Nécessaire Cuidados do Rosto",
+        "preco": "13.99",
+        "quantidade": "1",
+        "preconovo": "13.99"
+    },
+    "33027": {
+        "ref": "33027",
+        "nome": "Creme para Calcanhares Gretados Repair & Smooth Feet Up Advanced",
+        "preco": "7.99",
+        "quantidade": "1",
+        "preconovo": "7.99"
+    },
+    "46415": {
+        "ref": "46415",
+        "nome": "Massajador Linha do Maxilar Arctic Ritual",
+        "preco": "4.99",
+        "quantidade": "1",
+        "preconovo": "4.99"
+    },
+    "34076": {
+        "ref": "34076",
+        "nome": "Deo Roll-On Antitranspirante Be The Legend",
+        "preco": "4.99",
+        "quantidade": "1",
+        "preconovo": "4.99"
+    },
+    "30468": {
+        "ref": "30468",
+        "nome": "Eau de Toilette Be The Legend Para Ele",
+        "preco": "19.99",
+        "quantidade": "1",
+        "preconovo": "19.99"
+    },
+    "45728": {
+        "ref": "45728",
+        "nome": "Beauty headband",
+        "preco": "6.99",
+        "quantidade": "1",
+        "preconovo": "6.99"
+    },
+    "46020": {
+        "ref": "46020",
+        "nome": "Água Micelar Calmante com Aveia e Bagas Goji Love Nature",
+        "preco": "7.49",
+        "quantidade": "1",
+        "preconovo": "7.49"
+    },
+    "44551": {
+        "ref": "44551",
+        "nome": "Óleo de Lábios Lip Spa THE ONE - NUDE",
+        "preco": "6.99",
+        "quantidade": "1",
+        "preconovo": "6.99"
+    },
+    "143555": {
+        "ref": "143555",
+        "nome": "Conjunto Be The Legend Para Ele",
+        "preco": "22.99",
+        "quantidade": "4",
+        "preconovo": "22.99"
+    },
+    "139377": {
+        "ref": "139377",
+        "nome": "Conjunto Eclat Homme",
+        "preco": "22.99",
+        "quantidade": "3",
+        "preconovo": "22.99"
+    },
+    "31698": {
+        "ref": "31698",
+        "nome": "Spray Desodorizante Antitranspirante Eclat Homme",
+        "preco": "6.99",
+        "quantidade": "1",
+        "preconovo": "6.99"
+    },
+    "42864": {
+        "ref": "42864",
+        "nome": "Eau The Toilette Eclat Homme",
+        "preco": "19.99",
+        "quantidade": "1",
+        "preconovo": "19.99"
+    },
+    "139376": {
+        "ref": "139376",
+        "nome": "Conjunto Excite Force",
+        "preco": "22.99",
+        "quantidade": "6",
+        "preconovo": "22.99"
+    },
+    "31639": {
+        "ref": "31639",
+        "nome": "Eau The Toilette Excite Force",
+        "preco": "19.99",
+        "quantidade": "1",
+        "preconovo": "19.99"
+    },
+    "145128": {
+        "ref": "145128",
+        "nome": "Conjunto SubZero North for Men",
+        "preco": "14.99",
+        "quantidade": "2",
+        "preconovo": "14.99"
+    },
+    "33350": {
+        "ref": "33350",
+        "nome": "Spray Desodorizante Excite Force",
+        "preco": "6.99",
+        "quantidade": "1",
+        "preconovo": "6.99"
+    },
+    "141492": {
+        "ref": "141492",
+        "nome": "Conjunto Eclat Mon Parfum",
+        "preco": "29.99",
+        "quantidade": "1",
+        "preconovo": "29.99"
+    },
+    "29446": {
+        "ref": "29446",
+        "nome": "Conjunto NovAge Men",
+        "preco": "77.00",
+        "quantidade": "0",
+        "preconovo": "77.00"
+    },
+    "42523": {
+        "ref": "42523",
+        "nome": "Creme de Corpo Eclat Mon Parfum",
+        "preco": "16.00",
+        "quantidade": "1",
+        "preconovo": "5.99"
+    },
+    "41141": {
+        "ref": "41141",
+        "nome": "Creme de Mãos Berry Merry",
+        "preco": "2.99",
+        "quantidade": "4",
+        "preconovo": "2.99"
+    },
+    "44280": {
+        "ref": "44280",
+        "nome": "Creme Cuidado de Mãos com Óleo de Abacate Biológico Love Nature",
+        "preco": "2.99",
+        "quantidade": "2",
+        "preconovo": "2.99"
+    },
+    "44485": {
+        "ref": "44485",
+        "nome": "Polar 3 pack Earring Set",
+        "preco": "4.99",
+        "quantidade": "1",
+        "preconovo": "4.99"
+    }
+}

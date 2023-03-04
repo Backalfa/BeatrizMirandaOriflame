@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Beatriz Miranda Oriflame</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="website icon" type="png" href="../imgs/icontab.png">
+        <link rel="stylesheet" href="../css/stylemain.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <script src="../js/filtros.js"></script>
+        <style>
+            .w3-sidebar a {
+                font-family: "Roboto", sans-serif;
+            }
+            body, h1, h2, h3, h4, h5, h6, .w3-wide {
+                font-family: "Montserrat", sans-serif;
+            }
+            html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+            .mySlides {display:none}
+            .w3-tag, .fa {cursor:pointer}
+            .w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+        </style>
+        <style>
+            .accordion-header:hover {
+                background-color: #eee;
+                cursor: pointer;
+            }
+
+            .accordion-content {
+                padding: 10px;
+                display: none;
+            }
+
+            .accordion-content.show {
+                display: block;
+            }
+
+        </style>
+        <style>
+            .header-inline{
+                display: inline-block;
+            }
+            .go-to-left{
+                float: left;
+            }
+            .go-to-right{
+                float: right;
+            }
+        </style>
+    </head>
+    <body class="w3-content" style="max-width: 1200px;">
+        <!-- Sidebar/menu -->
+        <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index: 3; width: 250px;" id="mySidebar">
+            <div class="w3-container w3-display-container w3-padding-16">
+                <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+                <img src="../imgs/LOGO.jpg" style="width: 100%;">
+            </div>
+            <a href="https://pt.oriflame.com/products/digital-catalogue-current?PageNumber=1" class="w3-bar-item w3-button w3-padding" target="_blank">Catálogo Atual</a>
+            <a href="https://pt.oriflame.com/catalogue?cataloguecode=Norrsken%2F2023-norrsken-spring" class="w3-bar-item w3-button w3-padding" target="_blank">NORRSKEN- Jóias</a>
+            <a href="https://pt.oriflame.com/catalogue?cataloguecode=FlyerC04&PageNumber=1" class="w3-bar-item w3-button w3-padding" target="_blank">Oportunidades</a>
+            <a href="#promo" class="w3-bar-item w3-button w3-padding">Produtos Disponíveis</a><br><br>
+            <div style="text-align: center;">
+                <img src="../QrCode.png" style="width: 100%;">
+            </div>
+        </nav>
+
+        <!-- Top menu on small screens -->
+        <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+            <div class="w3-bar-item w3-padding-24 w3-wide">
+            </div>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+        </header>
+
+        <!-- Overlay effect when opening sidebar on small screens -->
+        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer;" title="close side menu" id="myOverlay"></div>
+
+        <!-- !PAGE CONTENT! -->
+        <div class="w3-main" style="margin-left: 250px;">
+            <!-- Push down content on small screens -->
+            <div class="w3-hide-large" style="margin-top: 83px;"></div>
+
+            <!-- Top header -->
+            <header class="w3-container w3-xlarge" style="padding: 35px;">
+                <div class="header-inline go-to-left">
+                    <a href="../../Index.html"><i class="fa fa-reply"></i></a>
+                </div>
+                <div class="header-inline go-to-right">
+                    <i class="fa fa-shopping-cart w3-margin-right"></i>
+                    <i class="fa fa-search"></i>
+                </div>
+            </header>
+
+            <!-- Content Page -->
+
+            <div class="w3-row">
+                <h2 style="color: #606060; position: relative; margin-left: 5%;">Sistema de Limpeza de Rosto 3 em 1 SkinPro Sonic</h2>
+                <div class="w3-col l5 s12" style="position: relative; display: block; top: 0;">
+                    <div class="w3-container">
+                        <div class="w3-display-container mySlides" style="display: block;">
+                            <img src="imgs/29915(1).jpg" style="width:100%">
+                        </div>
+                        <div class="w3-display-container mySlides" style="display: none;">
+                            <img src="imgs/29915(2).jpg" style="width:100%">
+                        </div>
+                        <div class="w3-display-container mySlides" style="display: none;">
+                            <img src="imgs/29915(3).jpg" style="width:100%">
+                        </div>
+                        <div class="w3-display-container mySlides" style="display: none;">
+                            <img src="imgs/29915(4).jpg" style="width:100%">
+                        </div>
+
+                        <!-- Slideshow next/previous buttons -->
+                        <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+                            <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+                            <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+                            
+                            <div class="w3-center">
+                                <span class="w3-tag demodots w3-border w3-transparent w3-hover-white w3-white" onclick="currentDiv(1)"></span>
+                                <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                                <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                                <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col l7 s12">
+                    <div class="w3-container" style="color: #606060;">
+                        <p>Aparelho 15,8 x 5,8 x 5,8 cm, ABS. Diâmetro da Escova de Limpeza 4,77 cm, PP e cerdas de nylon. Escova Esfoliante de Silicone, diâmetro 5 cm, PP e silicone. Escova de Massagem de Metal 6,1 x 5 cm, PP e aço inoxidável.</p>
+
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3><i class="fa fa-caret-down"></i> Descrição</h3>
+                                </div>
+                                <div class="accordion-content">
+                                    <div><strong>MIME-SE COM UM CUIDADO FACIAL DE SPA EM SUA CASA, TODOS OS DIAS</strong><br>
+                                        <br>
+                                        <p>RESULTADOS DE SPA EM SUA CASA - 100% CONCORDARAM*<br></p>
+                                        <br>
+                                        <p>Consiga uma pele magnificamente limpa, saudável e radiante com o Sistema de Limpeza de Rosto 3 em 1 SkinPro Sonic. Com tecnologia sónica, esta escova limpa, esfolia e massaja a pele para resultados de spa, no conforto da sua casa. Com três programas e três escovas à sua escolha, poderá adaptar facilmente os seus cuidados do rosto, elevando-os a um novo patamar, e desfrutar da pele mais bonita e saudável de sempre.<br></p>
+                                        <br>
+                                        <strong>"a minha pele nunca esteve tão bonita"<sup>#</sup></strong><br>
+                                        <br>
+                                        <strong>O Sistema de Limpeza de Rosto 3 em 1 SkinPro Sonic inclui:</strong><br>
+                                        <p>Aparelho com tecnologia sónica<br></p>
+                                        <p>Escova de Limpeza Purificante <br></p>
+                                        <p>Escova Esfoliante de Silicone Para Limpeza Profunda<br></p>
+                                        <p>Escova de Massagem de Metal Tonificante <br></p>
+                                        <p>3 programas à sua escolha:<br></p>
+                                        <ul><li>programa facial automático de 60 segundos<br></li><li>intensidade elevada constante<br></li><li>intensidade baixa constante<br></li></ul>
+                                        <p>Funciona a pilhas<br></p>
+                                        <p>Inclui suporte<br></p>
+                                        <br>
+                                        <p>Dimensões: 15.8 x 5.85 x 5.8 cm. Material: ABS.<br></p>
+                                        <br>
+                                        <strong>ESCOVA DE LIMPEZA Purificante</strong><br>
+                                        <p>Limpeza diária eficaz para uma pele excecionalmente limpa, refrescada, visivelmente rejuvenescida e saudável. <br></p>
+                                        <p>As cerdas finas de nylon da escova de limpeza são ideais para remover a maquilhagem e impurezas, incluindo o excesso de oleosidade, sujidade e outras partículas de poluição, para uma pele perfeitamente preparada para uma absorção eficaz dos seus produtos de cuidados do rosto.<br></p>
+                                        <strong>MAIS EFICAZ DO QUE A LIMPEZA MANUAL - CLINICAMENTE COMPROVADO!<sup>∆</sup></strong><br>
+                                        <br>
+                                        <p>Dimensões: Diâmetro 4.77 cm. Materiais: PP com cerdas de nylon.<br></p>
+                                        <br>
+                                        <strong>ESCOVA ESFOLIANTE DE SILICONE para uma limpeza profunda</strong><br>
+                                        <p>Incrivelmente suave mas altamente eficaz, esta escova proporciona uma limpeza profunda e esfoliação para revelar uma pele mais suave, refinada e com poros visivelmente minimizados. <br></p>
+                                        <p>A escova esfoliante de silicone remove as células cutâneas mortas e outras impurezas acumuladas, desobstruindo visivelmente os poros, suavizando e refinando a pele para ajudar a assegurar uma absorção eficaz dos seus produtos de cuidados do rosto e, consequentemente, os melhores resultados.<br></p>
+                                        <strong>PELE MAIS SUAVE EM APENAS 4 SEMANAS - CLINICAMENTE COMPROVADO!<sup>*</sup></strong><br>
+                                        <br>
+                                        <p>Diâmetro: diâmetro 5 cm. Materiais: PP com silicone.<br></p>
+                                        <br>
+                                        <strong>ESCOVA DE MASSAGEM DE METAL tonificante</strong><br>
+                                        <p>Uma verdadeira revolução na sua rotina de cuidados do rosto, esta escova de massagem apresenta resultados clinicamente comprovados na melhoria do tom de pele e elasticidade em apenas 4 semanas, para uma pele tonificada e perfeita.<br></p>
+                                        <p>Escova em aço inoxidável, texturada e refrescante, para massajar a pele com os cremes hidratantes, ao mesmo tempo que a vibração sónica potencia a sua ação e ajuda a promover a microcirculação sanguínea. Perfeita para massagem no rosto, linha do maxilar, pescoço e decote. <br></p>
+                                        <strong>PELE MAIS TONIFICADA E COM MAIS ELASTICIDADE EM APENAS 4 SEMANAS - CLINICAMENTE COMPROVADO!<sup>*</sup></strong><br>
+                                        <br>
+                                        <p>Dimensões: comprimento 6.15 cm x 5 cm. Materiais: PP com aço inoxidável.<br></p>
+                                        <br>
+                                        <sup>*</sup> Clinicamente testado com as três escovas com uma limpeza em espuma e um creme hidratante.<br>
+                                        <p>* Teste de consumidor realizado com as três escovas com uma limpeza em espuma e um creme hidratante.<br></p>
+                                        <sup>#</sup> Comentário espontâneo do consumidor</div>
+                                </div>
+                            </div><br>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3><i class="fa fa-caret-down"></i> Como Usar</h3>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="product-detail-odio9d"><strong>VIBRE COM UMA PELE MAIS LIMPA, RADIANTE E JOVEM!</strong><br>
+                                        <strong>DIARIAMENTE:</strong> Escova de Limpeza Purificante + a sua limpeza de rosto usual<br>
+                                        <strong>1-2X POR SEMANA (dias não consecutivos):</strong> Escova Esfoliante de Silicone + a sua limpeza de rosto usual<br>
+                                        <strong>DIARIAMENTE:</strong> Escova de Massagem de Metal tonificante + os seus cremes hidratantes usuais<br>
+                                        <br>
+                                        <strong>ESCOVA DE LIMPEZA Purificante</strong><br>
+                                        <p>Use diariamente. Recomendamos o Programa Facial Automático de 60 segundos.<br></p>
+                                        <br>
+                                        <p>Remova manualmente a maquilhagem de olhos com um desmaquilhante de olhos. Não utilize o aparelho na zona delicada do contorno de olhos.<br></p>
+                                        <ul><li>Humedeça o rosto e a escova de limpeza com agua tépida.<br></li><li>Aplique um pouco de limpeza de rosto na pele ou diretamente na escova. Não utilize limpezas que contenham partículas esfoliantes.<br></li><li>Ligue o aparelho e selecione o programa que pretende utilizar.<br></li><li>Pressione a escova gentilmente na pele e faça movimentos circulares. Evite a zona dos olhos. Irá sentir uma ligeira vibração.<br></li><li>Quando terminar o programa, enxague o rosto com água tépida e seque com uma toalha suave.<br></li><li>Lave a escova e deixe secar naturalmente.<br></li></ul>
+                                        <br>
+                                        <strong>ESCOVA ESFOLIANTE DE SILICONE para uma limpeza profunda </strong><br>
+                                        <p>Use uma ou duas vezes por semana (dias não consecutivos), após a limpeza. Recomendamos o Programa Facial Automático de 60 segundos.<br></p>
+                                        <br>
+                                        <ul><li>Remova manualmente a maquilhagem de olhos com um desmaquilhante de olhos. Não utilize o aparelho na zona delicada do contorno de olhos.<br></li><li>Humedeça o rosto e a escova de limpeza com agua tépida.<br></li><li>Aplique um pouco de limpeza de rosto na pele ou diretamente na escova. Não utilize limpezas que contenham partículas esfoliantes.<br></li><li>Ligue o aparelho e selecione o programa que pretende utilizar. <br></li><li>Pressione a escova gentilmente na pele e faça movimentos circulares. Evite a zona dos olhos. Irá sentir uma ligeira vibração.<br></li><li>Quando terminar o programa, enxague o rosto com água tépida e seque com uma toalha suave.<br></li><li>Lave a escova e deixe secar naturalmente.<br></li></ul>
+                                        <br>
+                                        <strong>ESCOVA DE MASSAGEM DE METAL tonificante</strong><br>
+                                        <p>Use sempre que desejar. Para obter os melhores resultados, utilize diariamente na pele limpa. Indicada para o rosto, linha do maxilar, pescoço e decote. Evite a zona do contorno de olhos, cana do nariz, queixo e maçã de Adão.<br></p>
+                                        <br>
+                                        <ul><li>Aplique o hidratante usual e deixe absorver.<br></li><li>Ligue o aparelho e selecione o programa que pretende utilizar.<br></li><li>Pressione a escova gentilmente na pele e faça movimentos circulares. Evite a zona dos olhos. Irá sentir uma ligeira vibração.<br></li><li>Quando terminar o programa, limpe quaisquer resíduos do hidratante da escova de massagem com um pano humedecido. <br></li></ul>
+                                        <br>
+                                        <strong>PROGRAMA 1: PROGRAMA FACIAL AUTOMÁTICO DE 60 SEGUNDOS</strong><br>
+                                        <p>A escolha perfeita, especialmente para a primeira vez que utilizar o aparelho!<br></p>
+                                        <p>O Programa Facial Automático de 60 segundos foi concebido para uma limpeza e esfoliação do rosto curta - testa 20 segundos, nariz, lábio superior e queixo 20 segundos no total, maçãs do rosto 10 segundos de cada laso. O funcionamento para brevemente entre as zonas, para saber quando passar para outra parte do rosto, e desliga-se automaticamente após terminar o programa.<br></p>
+                                        <br>
+                                        <strong>PROGRAMA 2: INTENSIDADE ELEVADA CONTÍNUA</strong><br>
+                                        <p>Selecione este programa para uma ação mais intensa. Não recomendado para pele sensível, irritada, fina ou com lesões.<br></p>
+                                        <br>
+                                        <strong>PROGRAMA 3: INTENSIDADE BAIXA CONTÍNUA</strong><br>
+                                        <p>Selecione este programa para uma ação mais longa e menos intensa. <br></p>
+                                        <br>
+                                        <strong>MANUTENÇÃO DO SISTEMA DE LIMPEZA DE ROSTO 3 EM 1 SKINPRO SONIC</strong><br>
+                                        <p>É importante uma correta manutenção do Sistema SkinPro Sonic para que se mantenha nas melhores condições. <br></p>
+                                        <br>
+                                        <p>Para mais informações sobre a utilização do produto, segurança e manutenção, por favor leia o folheto de instruções incluído na embalagem.</p></div>
+                                </div>
+                            </div><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+                <div class="w3-row-padding">
+                        <h3>Métodos de Pagamento</h3>
+                        <p><i class="fa fa-fw fa-mobile"></i> MBWay</p>
+                        <p><i class="fa fa-fw fa-credit-card"></i> Transferência Bancária</p>
+                        <br />
+                    </div>
+                </div>
+            </footer>
+            <!-- End page content -->
+        </div>
+        <script>
+            // Slideshow
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+            showDivs(slideIndex += n);
+            }
+
+            function currentDiv(n) {
+            showDivs(slideIndex = n);
+            }
+
+            function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demodots");
+            if (n > x.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = x.length} ;
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
+            }
+            x[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " w3-white";
+            }
+        </script>
+        <script>
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    header.classList.toggle('active');
+                    const accordionContent = header.nextElementSibling;
+                    accordionContent.classList.toggle('show');
+                });
+            });
+
+        </script>
+        <script>
+            // Accordion
+            function myAccFunc() {
+                var x = document.getElementById("demoAcc");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+        
+            // Click on the "Jeans" link on page load to open the accordion for demo purposes
+             document.getElementById("myBtn").click();
+        
+            // Open and close sidebar
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+        
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+        </script>
+    </body>
+</html>

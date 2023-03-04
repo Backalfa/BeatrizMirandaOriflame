@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <script src="content/js/filtros.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="content/js/base de dados.js"></script>
         <style>
             .w3-sidebar a {
                 font-family: "Roboto", sans-serif;
@@ -102,113 +104,170 @@
             <div class="w3-row">
                 <div class="w3-col l3 s6">
                     <div class="w3-container">
-                        <div class="w3-display-container">
+                        <div class="w3-display-container"><span id="venda-12760"></span><span id="prom-12760"></span>
                             <img src="content/imgs/produtos/12760 - Bálsamo Natural Geleia Real.jpg" style="width: 90%;" />
-                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag" style="position: absolute; bottom: 0;"><div id="quantidade-12760"></div></span>
                             <span class="w3-tag w3-display-topright" style="background-color: transparent;">
                                 <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
                                 <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
                             </span>
                         </div>
-                        <p> <span style="font-size: smaller;">Ref: 12760</span><br />
-                            Bálsamo Natural Geleia Real<br />
-                            <b>4.99€</b>
-                        </p>
+                        <div id="produtos-12760"></div>
                     </div>
                     <div class="w3-container">
-                        <div class="w3-display-container">
+                        <div class="w3-display-container"><span id="venda-35910"></span><span id="prom-35910"></span>
                             <img src="content/imgs/produtos/35910 - Limpeza Energizante com Alperce e Laranja Biológicos Love Nature.jpg" style="width: 90%;" />
-                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag" style="position: absolute; bottom: 0;"><div id="quantidade-35910"></div></span>
                             <span class="w3-tag w3-display-topright" style="background-color: transparent;">
                                 <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
                                 <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
                             </span>
                         </div>
-                        <p> <span style="font-size: smaller;">Ref: 35910</span><br />
-                            Gel Limpeza Alperce e Laranja Love Nature<br />
-                            <b>8.99€</b>
-                        </p>
+                        <div id="produtos-35910"></div>
                     </div>
                 </div>
                 <div class="w3-col l3 s6">
                     <div class="w3-container">
-                        <div class="w3-display-container">
+                        <div class="w3-display-container"><span id="venda-35911"></span><span id="prom-35911"></span>
                             <img src="content/imgs/produtos/35911 - Gel de Rosto Radiance com Alperce e Laranja Biológicos Love Nature.jpg" style="width: 90%;" />
-                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag" style="position: absolute; bottom: 0;"><div id="quantidade-35911"></div></span>
                             <span class="w3-tag w3-display-topright" style="background-color: transparent;">
                                 <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
                                 <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
                             </span>
                         </div>
-                        <p> <span style="font-size: smaller;">Ref: 35911</span><br />
-                            Gel de Rosto Alperce e Laranja Love Nature<br />
-                            <b>6.99€</b>
-                        </p>
+                        <div id="produtos-35911"></div>
                     </div>
                     <div class="w3-container">
-                        <div class="w3-display-container">
+                        <div class="w3-display-container"><span id="venda-41364"></span><span id="prom-41364"></span>
                             <img src="content/imgs/produtos/41364 - Gel Creme Hidratante Water Burst Dewy Waunt.jpg" style="width: 90%;" />
-                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag" style="position: absolute; bottom: 0;"><div id="quantidade-41364"></div></span>
                             <span class="w3-tag w3-display-topright" style="background-color: transparent;">
                                 <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
                                 <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
                             </span>
                         </div>
-                        <p> <span style="font-size: smaller;">Ref: 41364</span><br />
-                            Gel Creme Hidratante Water Burst Dewy Waunt<br />
-                            <b>19.99€</b>
-                        </p>
+                        <div id="produtos-41364"></div>
                     </div>
                 </div>
                 <div class="w3-col l3 s6">
                     <div class="w3-container">
-                        <div class="w3-display-container">
+                        <div class="w3-display-container"><span id="venda-41365"></span><span id="prom-41365"></span>
                             <img src="content/imgs/produtos/41365 - Creme de Dia Super Recover Whipped Waunt.jpg" style="width: 90%;" />
-                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag" style="position: absolute; bottom: 0;"><div id="quantidade-41365"></div></span>
                             <span class="w3-tag w3-display-topright" style="background-color: transparent;">
                                 <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
                                 <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
                             </span>
                         </div>
-                        <p> <span style="font-size: smaller;">Ref: 41365</span><br />
-                            Creme de Dia Super Recover Whipped Waunt<br />
-                            <b>19.99€</b>
-                        </p>
+                        <div id="produtos-41365"></div>
                     </div>
-                    <!-- ESGOTADO -->
                     <div class="w3-container">
-                        <div class="w3-display-container">
+                        <div class="w3-display-container"><span id="venda-29446"></span><span id="prom-29446"></span>
                             <img src="content/imgs/produtos/29446 - Conjunto NovAge Men.jpg" style="width: 90%;" />
-                            <!--<span class="w3-tag" style="position: absolute; bottom: 0;">1</span>-->
-                            <span class="w3-tag" style="position: absolute; top: 0;left:0;">Vendido!</span>
+                            <span class="w3-tag" style="position: absolute; bottom: 0;"><div id="quantidade-29446"></div></span>
                             <span class="w3-tag w3-display-topright" style="background-color: transparent;">
                                 <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
                             </span>
                         </div>
-                        <p> <span style="font-size: smaller;">Ref: 29446</span><br />
-                            Conjunto NovAge Men<br />
-                            <b>77.00€</b>
-                        </p>
+                        <div id="produtos-29446"></div>
                     </div>
                 </div>
                 <div class="w3-col l3 s6">
                     <div class="w3-container">
-                        <div class="w3-display-container">
+                        <div class="w3-display-container"><span id="venda-41374"></span><span id="prom-41374"></span>
                             <img src="content/imgs/produtos/41374 - Manteiga de Limpeza Level Up Waunt.jpg" style="width: 90%;" />
-                            <span class="w3-tag" style="position: absolute; bottom: 0;">1</span>
+                            <span class="w3-tag" style="position: absolute; bottom: 0;"><div id="quantidade-41374"></div></span>
                             <span class="w3-tag w3-display-topright" style="background-color: transparent;">
                                 <span style="background-color: rgb(155, 201, 231); border-radius: 50%;padding: 5px;">H</span>
                                 <span style="background-color: rgb(252, 166, 233); border-radius: 50%;padding: 5px;">M</span>
                             </span>
                         </div>
-                        <p> <span style="font-size: smaller;">Ref: 41374</span><br />
-                            Manteiga de Limpeza Level Up Waunt<br />
-                            <b>13.99€</b>
-                        </p>
+                        <div id="produtos-41374"></div>
                     </div>
                 </div>
             </div>
             
+            
+            <script>
+                $(document).ready(function() {
+                createInterface('12760');
+                createInterface('25479');
+                createInterface('29915');
+                createInterface('30609');
+                createInterface('45983');
+                createInterface('34938');
+                createInterface('35679');
+                createInterface('35759');
+                createInterface('35910');
+                createInterface('35911');
+                createInterface('38534');
+                createInterface('38575');
+                createInterface('38508');
+                createInterface('38533');
+                createInterface('38864');
+                createInterface('38865');
+                createInterface('45177');
+                createInterface('40670');
+                createInterface('40788');
+                createInterface('40797');
+                createInterface('41099');
+                createInterface('41277');
+                createInterface('41335');
+                createInterface('41364');
+                createInterface('41365');
+                createInterface('41374');
+                createInterface('41382');
+                createInterface('41493');
+                createInterface('41563');
+                createInterface('41710');
+                createInterface('41942');
+                createInterface('42058');
+                createInterface('43696');
+                createInterface('43747');
+                createInterface('42206');
+                createInterface('42469');
+                createInterface('42503');
+                createInterface('42739');
+                createInterface('43954');
+                createInterface('44300');
+                createInterface('44599');
+                createInterface('45173');
+                createInterface('45253');
+                createInterface('45275');
+                createInterface('45276');
+                createInterface('45277');
+                createInterface('45297');
+                createInterface('45492');
+                createInterface('45984');
+                createInterface('46011');
+                createInterface('45736');
+                createInterface('45767');
+                createInterface('45789');
+                createInterface('45895');
+                createInterface('33027');
+                createInterface('46415');
+                createInterface('34076');
+                createInterface('45728');
+                createInterface('46020');
+                createInterface('44551');
+                createInterface('143555');
+                createInterface('139377');
+                createInterface('31698');
+                createInterface('42864');
+                createInterface('139376');
+                createInterface('31639');
+                createInterface('145128');
+                createInterface('33350');
+                createInterface('141492');
+                createInterface('29446');
+                createInterface('42523');
+                createInterface('41141');
+                createInterface('44280');
+                createInterface('44485');
+                createInterface('30468');
+                });
+            </script>
 
             <!-- Footer -->
             <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
