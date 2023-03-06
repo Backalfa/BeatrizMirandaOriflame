@@ -1,3 +1,5 @@
+
+
 {
     "12760": {
         "ref": "12760",
@@ -32,7 +34,7 @@
         "nome": "Mala Shopper Dobravél Bisous",
         "preco": "14.99",
         "quantidade": "1",
-        "preconovo": "14.99"
+        "preconovo": "6.99"
     },
     "34938": {
         "ref": "34938",
@@ -45,7 +47,7 @@
         "ref": "35679",
         "nome": "Parfum All or Nothing",
         "preco": "49.99",
-        "quantidade": "3",
+        "quantidade": "2",
         "preconovo": "49.99"
     },
     "35759": {
@@ -58,16 +60,16 @@
     "35910": {
         "ref": "35910",
         "nome": "Gel Limpeza Alperce e Laranja Love Nature",
-        "preco": "8.99",
+        "preco": "15.00",
         "quantidade": "1",
-        "preconovo": "8.99"
+        "preconovo": "7.49"
     },
     "35911": {
         "ref": "35911",
         "nome": "Gel de Rosto Alperce e Laranja Love Nature",
-        "preco": "6.99",
+        "preco": "15.00",
         "quantidade": "1",
-        "preconovo": "6.99"
+        "preconovo": "7.49"
     },
     "38534": {
         "ref": "38534",
@@ -79,16 +81,16 @@
     "38575": {
         "ref": "38575",
         "nome": "Eau de Parfum Wild Hearts Swedish Experience",
-        "preco": "21.99",
+        "preco": "25.99",
         "quantidade": "2",
-        "preconovo": "21.99"
+        "preconovo": "25.99"
     },
     "38508": {
         "ref": "38508",
         "nome": "Eau de Parfum Lost in You para Ela",
-        "preco": "21.99",
+        "preco": "20.99",
         "quantidade": "1",
-        "preconovo": "21.99"
+        "preconovo": "20.99"
     },
     "38533": {
         "ref": "38533",
@@ -100,16 +102,16 @@
     "38864": {
         "ref": "38864",
         "nome": "Batom Irresistible Touch High Shine THE ONE",
-        "preco": "8.99",
-        "quantidade": "1",
-        "preconovo": "8.99"
+        "preco": "9.99",
+        "quantidade": "0",
+        "preconovo": "9.99"
     },
     "38865": {
         "ref": "38865",
         "nome": "Batom Irresistible Touch High Shine THE ONE",
-        "preco": "8.99",
+        "preco": "9.99",
         "quantidade": "1",
-        "preconovo": "8.99"
+        "preconovo": "9.99"
     },
     "45177": {
         "ref": "45177",
@@ -199,7 +201,7 @@
         "ref": "41563",
         "nome": "Máscara Facial em Tecido ProCeuticals NovAge",
         "preco": "8.99",
-        "quantidade": "1",
+        "quantidade": "0",
         "preconovo": "8.99"
     },
     "41710": {
@@ -261,7 +263,7 @@
     "42739": {
         "ref": "42739",
         "nome": "Eau de Toilette Glacier Fire",
-        "preco": "22.99",
+        "preco": "32.00",
         "quantidade": "1",
         "preconovo": "15.99"
     },
@@ -380,9 +382,9 @@
     "33027": {
         "ref": "33027",
         "nome": "Creme para Calcanhares Gretados Repair & Smooth Feet Up Advanced",
-        "preco": "7.99",
-        "quantidade": "1",
-        "preconovo": "7.99"
+        "preco": "8.99",
+        "quantidade": "0",
+        "preconovo": "8.99"
     },
     "46415": {
         "ref": "46415",
@@ -401,9 +403,9 @@
     "30468": {
         "ref": "30468",
         "nome": "Eau de Toilette Be The Legend Para Ele",
-        "preco": "19.99",
+        "preco": "21.99",
         "quantidade": "1",
-        "preconovo": "19.99"
+        "preconovo": "21.99"
     },
     "45728": {
         "ref": "45728",
@@ -450,9 +452,9 @@
     "42864": {
         "ref": "42864",
         "nome": "Eau The Toilette Eclat Homme",
-        "preco": "19.99",
+        "preco": "21.99",
         "quantidade": "1",
-        "preconovo": "19.99"
+        "preconovo": "21.99"
     },
     "139376": {
         "ref": "139376",
@@ -464,9 +466,9 @@
     "31639": {
         "ref": "31639",
         "nome": "Eau The Toilette Excite Force",
-        "preco": "19.99",
+        "preco": "21.99",
         "quantidade": "1",
-        "preconovo": "19.99"
+        "preconovo": "21.99"
     },
     "145128": {
         "ref": "145128",
@@ -485,9 +487,9 @@
     "141492": {
         "ref": "141492",
         "nome": "Conjunto Eclat Mon Parfum",
-        "preco": "29.99",
-        "quantidade": "1",
-        "preconovo": "29.99"
+        "preco": "32.99",
+        "quantidade": "0",
+        "preconovo": "32.99"
     },
     "29446": {
         "ref": "29446",
@@ -501,7 +503,7 @@
         "nome": "Creme de Corpo Eclat Mon Parfum",
         "preco": "16.00",
         "quantidade": "1",
-        "preconovo": "5.99"
+        "preconovo": "6.99"
     },
     "41141": {
         "ref": "41141",

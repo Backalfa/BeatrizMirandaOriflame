@@ -44,3 +44,6 @@ function createInterface(ref) {
         }
     });
 }
+
+
+// Quando aparecer vendido sai o preço
