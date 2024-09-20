@@ -44,8 +44,8 @@
     "008": {
         "ref": "008",
         "nome": "Virilha integral",
-        "preco": "8.00",
-        "preconovo": "8.00"
+        "preco": "10.00",
+        "preconovo": "10.00"
     },
     "009": {
         "ref": "009",
@@ -56,8 +56,8 @@
     "010": {
         "ref": "010",
         "nome": "Perna completa",
-        "preco": "14.00",
-        "preconovo": "14.00"
+        "preco": "13.00",
+        "preconovo": "13.00"
     },
     "011": {
         "ref": "011",
@@ -68,19 +68,19 @@
     "012": {
         "ref": "012",
         "nome": "Costas",
-        "preco": "4.00",
+        "preco": "4.00€ a 7.00",
         "preconovo": "4.00"
     },
     "013": {
         "ref": "013",
         "nome": "Barriga",
-        "preco": "4.00",
+        "preco": "4.00€ a 7.00",
         "preconovo": "4.00"
     },
     "014": {
         "ref": "014",
         "nome": "Peito ou Nádegas",
-        "preco": "4.00",
+        "preco": "4.00€ a 7.00",
         "preconovo": "4.00"
     },
     "015": {
@@ -116,7 +116,7 @@
     "020": {
         "ref": "020",
         "nome": "½ perna e Virilha e axila",
-        "preco": "20.00",
+        "preco": "18.00",
         "preconovo": "20.00"
     },
     "021": {
@@ -140,8 +140,8 @@
     "024": {
         "ref": "024",
         "nome": "Aplicação na unha natural",
-        "preco": "25.00",
-        "precom": "28.00",
+        "preco": "30.00",
+        "precom": "00.00",
         "precol": "00.00",
         "precoxl": "00.00",
         "preconovo": "25.00"
@@ -149,16 +149,16 @@
     "025": {
         "ref": "025",
         "nome": "Aplicação extensão moldes",
-        "preco": "30.00",
-        "precom": "40.00",
-        "precol": "50.00",
+        "preco": "40.00",
+        "precom": "50.00",
+        "precol": "60.00",
         "precoxl": "70.00",
         "preconovo": "30.00"
     },
     "026": {
         "ref": "026",
         "nome": "Manutenção até 4 semanass",
-        "preco": "22.00",
+        "preco": "23.00",
         "precom": "25.00",
         "precol": "35.00",
         "precoxl": "55.00",
@@ -194,8 +194,8 @@
     "030": {
         "ref": "030",
         "nome": "Aplicação extensão moldes",
-        "preco": "35.00",
-        "precom": "45.00",
+        "preco": "40.00",
+        "precom": "50.00",
         "precol": "55.00",
         "precoxl": "75.00",
         "preconovo": "35.00"
@@ -204,7 +204,7 @@
         "ref": "031",
         "nome": "Manutenção até 4 semanas",
         "preco": "25.00",
-        "precom": "30.00",
+        "precom": "35.00",
         "precol": "40.00",
         "precoxl": "60.00",
         "preconovo": "25.00"
@@ -230,25 +230,25 @@
     "034": {
         "ref": "034",
         "nome": "VERNIZ GEL (Gelinho)",
-        "preco": "15.00",
+        "preco": "16.00",
         "preconovo": "15.00"
     },
     "035": {
         "ref": "035",
         "nome": "REMOVER - Verniz gel",
-        "preco": "7.00",
+        "preco": "10.00",
         "preconovo": "7.00"
     },
     "036": {
         "ref": "036",
         "nome": "REMOVER - Gel",
-        "preco": "8.00",
+        "preco": "15.00",
         "preconovo": "8.00"
     },
     "037": {
         "ref": "037",
         "nome": "REMOVER - Acrílico",
-        "preco": "10.00",
+        "preco": "15.00",
         "preconovo": "10.00"
     },
     "038": {
@@ -289,7 +289,7 @@
     "045": {
         "ref": "045",
         "nome": "Sobrancelha",
-        "preco": "8.00"
+        "preco": "87.50"
     },
     "046": {
         "ref": "046",
@@ -314,12 +314,12 @@
     "050": {
         "ref": "050",
         "nome": "Manicure normal",
-        "preco": "10.00"
+        "preco": "14.00"
     },
     "051": {
         "ref": "051",
         "nome": "Manicure e verniz normal",
-        "preco": "12.00"
+        "preco": "28.00"
     },
     "052": {
         "ref": "052",
@@ -349,7 +349,7 @@
     "057": {
         "ref": "057",
         "nome": "Limpeza de pele",
-        "preco": "40.00"
+        "preco": "45.00"
     },
     "058": {
         "ref": "058",
@@ -364,46 +364,46 @@
     "060": {
         "ref": "060",
         "nome": "Maquilhagem simples",
-        "preco": "20.00"
+        "preco": "35.00"
     },
     "061": {
         "ref": "061",
         "nome": "Maquilhagem c/eyeliner",
-        "preco": "25.00"
+        "preco": "35.00"
     },
     "062": {
         "ref": "062",
-        "nome": "Massagem localizada (30`)",
+        "nome": "Massagem localizada (30 min)",
         "preco": "20.00"
     },
     "063": {
         "ref": "063",
-        "nome": "Massagem relaxamento (50`)",
+        "nome": "Massagem relaxamento (50 min)",
         "preco": "35.00"
     },
     "064": {
         "ref": "064",
-        "nome": "Massagem californiana (50`)",
+        "nome": "Massagem californiana (50 min)",
         "preco": "35.00"
     },
     "065": {
         "ref": "065",
-        "nome": "Massagem aromaterapia (50`)",
+        "nome": "Massagem aromaterapia (50 min)",
         "preco": "40.00"
     },
     "066": {
         "ref": "066",
-        "nome": "Massagem de velas (50`)",
+        "nome": "Massagem de velas (50 min)",
         "preco": "40.00"
     },
     "067": {
         "ref": "067",
-        "nome": "Massagem Adelgaçante (30`) Z",
+        "nome": "Massagem Adelgaçante (30 min) Z",
         "preco": "25.00"
     },
     "068": {
         "ref": "068",
-        "nome": "Massagem Adelgaçante (50`)",
+        "nome": "Massagem Adelgaçante (50 min)",
         "preco": "35.00"
     },
     "069": {
