@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Beatriz Miranda Oriflame</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="website icon" type="png" href="content/imgs/icontab.png">
+        <link rel="stylesheet" href="content/css/stylemain.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="content/js/base de dados.js"></script>
+        <script src="content/js/base de precos.js"></script>
+        <style>
+            .w3-sidebar a {
+                font-family: "Roboto", sans-serif;
+            }
+            body, h1, h2, h3, h4, h5, h6, .w3-wide {
+                font-family: "Montserrat", sans-serif;
+            }
+        </style>
+    </head>
+    <body class="w3-content" style="max-width: 1200px;">
+        <!-- Sidebar/menu -->
+        <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index: 3; width: 250px;" id="mySidebar">
+            <div class="w3-container w3-display-container w3-padding-16">
+                <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+                <a href="Index.html"><img src="content/imgs/LOGO.jpg" style="width: 100%;"></a>
+            </div>
+            <a href="servicos.html" class="w3-bar-item w3-button w3-padding">Serviços</a>
+            <a href="https://pt.oriflame.com/products/digital-catalogue-current?PageNumber=1" class="w3-bar-item w3-button w3-padding" target="_blank">Catálogo Atual</a>
+            <a href="https://pt.oriflame.com/catalogue?cataloguecode=Norrsken%2F2023-norrsken-spring" class="w3-bar-item w3-button w3-padding" target="_blank">NORRSKEN- Jóias</a>
+            <a href="https://pt.oriflame.com/catalogue?cataloguecode=FlyerC04&PageNumber=1" class="w3-bar-item w3-button w3-padding" target="_blank">Oportunidades</a>
+            <a href="#promo" class="w3-bar-item w3-button w3-padding">Produtos Disponíveis</a><br><br>
+        </nav>
+
+        <!-- Top menu on small screens -->
+        <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+            <div class="w3-bar-item w3-padding-24 w3-wide">
+            </div>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+        </header>
+
+        <!-- Overlay effect when opening sidebar on small screens -->
+        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer;" title="close side menu" id="myOverlay"></div>
+
+        <!-- !PAGE CONTENT! -->
+        <div class="w3-main" style="margin-left: 250px;">
+            <!-- Push down content on small screens -->
+            <div class="w3-hide-large" style="margin-top: 83px;"></div>
+
+            <!-- Top header -->
+            <header class="w3-container w3-xlarge">
+                <p class="w3-right">
+                    <i class="fa fa-shopping-cart w3-margin-right"></i>
+                    <i class="fa fa-search"></i>
+                </p>
+            </header>
+
+            <!-- Image header -->
+            <div class="w3-display-container w3-container">
+                <img src="content/imgs/top-view-salts-cream-container.jpg" alt="Oriflame" style="width: 100%;" />
+                <div class="w3-display-topleft w3-text-black" style="padding: 24px 48px;">
+                    <h1 class="w3-jumbo w3-hide-small">ORIFLAME</h1>
+                    <h1 class="w3-hide-large w3-hide-medium">ORIFLAME</h1>
+                    <h1 class="w3-hide-small">COLEÇÃO 2024</h1>
+                    <p><a href="#promo" class="w3-button w3-black w3-padding-large w3-large">COMPRAR AGORA</a></p>
+                </div>
+            </div>
+
+            <!-- Product grid -->
+            
+            <div class="w3-row" style="margin: 60px 0;">
+                <div class="w3-col s12 m12 l6">
+                    <table style="width:100%">
+                        <thead class="" id="epilacao">
+                            <tr>
+                                <th class="upercase" colspan="2">Epilação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <th>Preço</th>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-001"></span></td>
+                                <td class='w3-center'><span id="preco-001"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-002"></span></td>
+                                <td class='w3-center'><span id="preco-002"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-003"></span></td>
+                                <td class='w3-center'><span id="preco-003"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-004"></span></td>
+                                <td class='w3-center'><span id="preco-004"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-005"></span></td>
+                                <td class='w3-center'><span id="preco-005"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-006"></span></td>
+                                <td class='w3-center'><span id="preco-006"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-007"></span></td>
+                                <td class='w3-center'><span id="preco-007"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-008"></span></td>
+                                <td class='w3-center'><span id="preco-008"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-009"></span></td>
+                                <td class='w3-center'><span id="preco-009"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-010"></span></td>
+                                <td class='w3-center'><span id="preco-010"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-011"></span></td>
+                                <td class='w3-center'><span id="preco-011"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-012"></span></td>
+                                <td class='w3-center'><span id="preco-012"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-013"></span></td>
+                                <td class='w3-center'><span id="preco-013"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-014"></span></td>
+                                <td class='w3-center'><span id="preco-014"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-015"></span></td>
+                                <td class='w3-center'><span id="preco-015"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-016"></span></td>
+                                <td class='w3-center'><span id="preco-016"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-017"></span></td>
+                                <td class='w3-center'><span id="preco-017"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-018"></span></td>
+                                <td class='w3-center'><span id="preco-018"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-019"></span></td>
+                                <td class='w3-center'><span id="preco-019"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-020"></span></td>
+                                <td class='w3-center'><span id="preco-020"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-021"></span></td>
+                                <td class='w3-center'><span id="preco-021"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <table style="width:100%">
+                        <thead class="" id="epilacao">
+                            <tr>
+                                <th class="upercase" colspan="2">Microblanding</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <th>Preço</th>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-022"></span></td>
+                                <td class='w3-center'><span id="preco-022"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-023"></span></td>
+                                <td class='w3-center'><span id="preco-023"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <table style="width:100%">
+                        <thead class="" id="epilacao">
+                            <tr>
+                                <th class="upercase" colspan="5">Unhas - Gel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                                <th>XL</th>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-024"></span></td>
+                                <td class='w3-center'><span id="preco-024"></span></td>
+                                <td class='w3-center'><span id="preco-024-m"></span></td>
+                                <td class='w3-center'><span id="preco-024-l"></span></td>
+                                <td class='w3-center'><span id="preco-024-xl"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-025"></span></td>
+                                <td class='w3-center'><span id="preco-025"></span></td>
+                                <td class='w3-center'><span id="preco-025-m"></span></td>
+                                <td class='w3-center'><span id="preco-025-l"></span></td>
+                                <td class='w3-center'><span id="preco-025-xl"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-026"></span></td>
+                                <td class='w3-center'><span id="preco-026"></span></td>
+                                <td class='w3-center'><span id="preco-026-m"></span></td>
+                                <td class='w3-center'><span id="preco-026-l"></span></td>
+                                <td class='w3-center'><span id="preco-026-xl"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-027"></span></td>
+                                <td class='w3-center'><span id="preco-027"></span></td>
+                                <td class='w3-center'><span id="preco-027-m"></span></td>
+                                <td class='w3-center'><span id="preco-027-l"></span></td>
+                                <td class='w3-center'><span id="preco-027-xl"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-028"></span></td>
+                                <td class='w3-center'><span id="preco-028"></span></td>
+                                <td class='w3-center'><span id="preco-028-m"></span></td>
+                                <td class='w3-center'><span id="preco-028-l"></span></td>
+                                <td class='w3-center'><span id="preco-028-xl"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <table style="width:100%">
+                        <thead class="" id="epilacao">
+                            <tr>
+                                <th class="upercase" colspan="5">Unhas - Acrílico</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                                <th>XL</th>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-029"></span></td>
+                                <td class='w3-center'><span id="preco-029"></span></td>
+                                <td class='w3-center'><span id="preco-029-m"></span></td>
+                                <td class='w3-center'><span id="preco-029-l"></span></td>
+                                <td class='w3-center'><span id="preco-029-xl"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-030"></span></td>
+                                <td class='w3-center'><span id="preco-030"></span></td>
+                                <td class='w3-center'><span id="preco-030-m"></span></td>
+                                <td class='w3-center'><span id="preco-030-l"></span></td>
+                                <td class='w3-center'><span id="preco-030-xl"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-031"></span></td>
+                                <td class='w3-center'><span id="preco-031"></span></td>
+                                <td class='w3-center'><span id="preco-031-m"></span></td>
+                                <td class='w3-center'><span id="preco-031-l"></span></td>
+                                <td class='w3-center'><span id="preco-031-xl"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-032"></span></td>
+                                <td class='w3-center'><span id="preco-032"></span></td>
+                                <td class='w3-center'><span id="preco-032-m"></span></td>
+                                <td class='w3-center'><span id="preco-032-l"></span></td>
+                                <td class='w3-center'><span id="preco-032-xl"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-033"></span></td>
+                                <td class='w3-center'><span id="preco-033"></span></td>
+                                <td class='w3-center'><span id="preco-033-m"></span></td>
+                                <td class='w3-center'><span id="preco-033-l"></span></td>
+                                <td class='w3-center'><span id="preco-033-xl"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <table style="width:100%">
+                        <thead class="" id="epilacao">
+                            <tr>
+                                <th class="upercase" colspan="2">Outros</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <th>Preço</th>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-034"></span></td>
+                                <td class='w3-center'><span id="preco-034"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-035"></span></td>
+                                <td class='w3-center'><span id="preco-035"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-036"></span></td>
+                                <td class='w3-center'><span id="preco-036"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-037"></span></td>
+                                <td class='w3-center'><span id="preco-037"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <table style="width:100%">
+                        <thead class="" id="epilacao">
+                            <tr>
+                                <th class="upercase" colspan="2">Nail Art</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <th>Preço</th>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-038"></span></td>
+                                <td class='w3-center'><span id="preco-038"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-039"></span></td>
+                                <td class='w3-center'><span id="preco-039"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-040"></span></td>
+                                <td class='w3-center'><span id="preco-040"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-041"></span></td>
+                                <td class='w3-center'><span id="preco-041"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-042"></span></td>
+                                <td class='w3-center'><span id="preco-042"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-043"></span></td>
+                                <td class='w3-center'><span id="preco-043"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-044"></span></td>
+                                <td class='w3-center'><span id="preco-044"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                </div>
+                <div class="w3-col m6 l6">
+
+                    <table style="width:100%">
+                        <thead class="" id="epilacao">
+                            <tr>
+                                <th class="upercase" colspan="2">Threading</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <th>Preço</th>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-045"></span></td>
+                                <td class='w3-center'><span id="preco-045"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-046"></span></td>
+                                <td class='w3-center'><span id="preco-046"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-047"></span></td>
+                                <td class='w3-center'><span id="preco-047"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-048"></span></td>
+                                <td class='w3-center'><span id="preco-048"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-049"></span></td>
+                                <td class='w3-center'><span id="preco-049"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <table style="width:100%">
+                        <thead class="" id="epilacao">
+                            <tr>
+                                <th class="upercase" colspan="2">Manicure / Pedicure</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <th>Preço</th>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-050"></span></td>
+                                <td class='w3-center'><span id="preco-050"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-051"></span></td>
+                                <td class='w3-center'><span id="preco-051"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-052"></span></td>
+                                <td class='w3-center'><span id="preco-052"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-053"></span></td>
+                                <td class='w3-center'><span id="preco-053"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-054"></span></td>
+                                <td class='w3-center'><span id="preco-054"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-055"></span></td>
+                                <td class='w3-center'><span id="preco-055"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <table style="width:100%">
+                        <thead class="" id="epilacao">
+                            <tr>
+                                <th class="upercase" colspan="2">Tratamentos de Rosto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <th>Preço</th>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-056"></span></td>
+                                <td class='w3-center'><span id="preco-056"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-057"></span></td>
+                                <td class='w3-center'><span id="preco-057"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-058"></span></td>
+                                <td class='w3-center'><span id="preco-058"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-059"></span></td>
+                                <td class='w3-center'><span id="preco-059"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <table style="width:100%">
+                        <thead class="" id="epilacao">
+                            <tr>
+                                <th class="upercase" colspan="2">Maquilhagem</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <th>Preço</th>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-060"></span></td>
+                                <td class='w3-center'><span id="preco-060"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-061"></span></td>
+                                <td class='w3-center'><span id="preco-061"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <table style="width:100%">
+                        <thead class="" id="epilacao">
+                            <tr>
+                                <th class="upercase" colspan="2">Massagens</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <th>Preço</th>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-062"></span></td>
+                                <td class='w3-center'><span id="preco-062"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-063"></span></td>
+                                <td class='w3-center'><span id="preco-063"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-064"></span></td>
+                                <td class='w3-center'><span id="preco-064"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-065"></span></td>
+                                <td class='w3-center'><span id="preco-065"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-066"></span></td>
+                                <td class='w3-center'><span id="preco-066"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-067"></span></td>
+                                <td class='w3-center'><span id="preco-067"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-068"></span></td>
+                                <td class='w3-center'><span id="preco-068"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <table style="width:100%">
+                        <thead class="" id="epilacao">
+                            <tr>
+                                <th class="upercase" colspan="2">Tratamentos de Corpo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <th>Preço</th>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-069"></span></td>
+                                <td class='w3-center'><span id="preco-069"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-070"></span></td>
+                                <td class='w3-center'><span id="preco-070"></span></td>
+                            </tr>
+                            <tr>
+                                <td><span id="nome-071"></span></td>
+                                <td class='w3-center'><span id="preco-071"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    
+                </div>
+            </div>
+            
+            
+            <script>
+                $(document).ready(function() {
+                    for (let i = 1; i <= 71; i++) {
+                        let ref = i.toString().padStart(3, '0'); // Adiciona zeros à esquerda para formar o formato 001, 002, etc.
+                        createInterfacePreco(ref);
+                    }
+                });
+
+            </script>
+
+<script>
+    $(document).ready(function() {
+        
+        setTimeout(function() {
+
+            var zeroValues = $('table').find('td').filter(function() {
+                return $(this).text().trim() === '00.00€';
+            });
+
+            console.log(zeroValues.length + " células encontradas com valor 00.00€");
+
+            zeroValues.css('display', 'none');
+        }, 500);
+    });
+</script>
+
+
+            <!-- Footer -->
+            <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+                <div class="w3-row-padding">
+                        <h3>Métodos de Pagamento</h3>
+                        <p><i class="fa fa-fw fa-mobile"></i> MBWay</p>
+                        <p><i class="fa fa-fw fa-credit-card"></i> Transferência Bancária</p>
+                        <br />
+                    </div>
+                </div>
+            </footer>
+            <!-- End page content -->
+        </div>
+
+        <script>
+            // Accordion
+            function myAccFunc() {
+                var x = document.getElementById("demoAcc");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+
+            // Click on the "Jeans" link on page load to open the accordion for demo purposes
+            document.getElementById("myBtn").click();
+
+            // Open and close sidebar
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+        </script>
+    </body>
+</html>
