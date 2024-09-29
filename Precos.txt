@@ -3,145 +3,145 @@
         "ref": "001",
         "nome": "Sobrancelha",
         "preco": "7.50",
-        "preconovo": "7.50"
+        "classe": "Epilação"
     },
     "002": {
         "ref": "002",
         "nome": "Buço",
         "preco": "5.00",
-        "preconovo": "5.00"
+        "classe": "Epilação"
     },
     "003": {
         "ref": "003",
         "nome": "Nariz",
         "preco": "3.00",
-        "preconovo": "3.00"
+        "classe": "Epilação"
     },
     "004": {
         "ref": "004",
         "nome": "Rosto",
         "preco": "8.00",
-        "preconovo": "8.00"
+        "classe": "Epilação"
     },
     "005": {
         "ref": "005",
         "nome": "Axila",
         "preco": "6.00",
-        "preconovo": "6.00"
+        "classe": "Epilação"
     },
     "006": {
         "ref": "006",
         "nome": "Braços",
         "preco": "9.00",
-        "preconovo": "9.00"
+        "classe": "Epilação"
     },
     "007": {
         "ref": "007",
         "nome": "Virilha normal",
         "preco": "8.00",
-        "preconovo": "8.00"
+        "classe": "Epilação"
     },
     "008": {
         "ref": "008",
         "nome": "Virilha completa",
         "preco": "10.00",
-        "preconovo": "10.00"
+        "classe": "Epilação"
     },
     "009": {
         "ref": "009",
         "nome": "½ perna",
         "preco": "8.00",
-        "preconovo": "8.00"
+        "classe": "Epilação"
     },
     "010": {
         "ref": "010",
         "nome": "Perna completa",
         "preco": "14.00",
-        "preconovo": "14.00"
+        "classe": "Epilação"
     },
     "011": {
         "ref": "011",
         "nome": "Orelhas",
         "preco": "3.00",
-        "preconovo": "3.00"
+        "classe": "Epilação"
     },
     "012": {
         "ref": "012",
         "nome": "Costas",
         "preco": "4€ a 7",
-        "preconovo": "4.00"
+        "classe": "Epilação"
     },
     "013": {
         "ref": "013",
         "nome": "Barriga",
         "preco": "4€ a 7",
-        "preconovo": "4.00"
+        "classe": "Epilação"
     },
     "014": {
         "ref": "014",
         "nome": "Peito ou Nádegas",
         "preco": "4€ a 7",
-        "preconovo": "4.00"
+        "classe": "Epilação"
     },
     "015": {
         "ref": "015",
         "nome": "Queixo e Sobrancelha",
         "preco": "11.00",
-        "preconovo": "11.00"
+        "classe": "Epilação"
     },
     "016": {
         "ref": "016",
         "nome": "Perna C + VN + axila + S + B",
         "preco": "25.00",
-        "preconovo": "25.00"
+        "classe": "Epilação"
     },
     "072": {
         "ref": "072",
         "nome": "Perna C + VC + axila + S + B",
         "preco": "29.00",
-        "preconovo": "25.00"
+        "classe": "Epilação"
     },
     "017": {
         "ref": "017",
         "nome": "Perna C + VN + axila + B",
         "preco": "23.00",
-        "preconovo": "23.00"
+        "classe": "Epilação"
     },
     "018": {
         "ref": "018",
         "nome": "½ perna + VN + B + S",
         "preco": "20.00",
-        "preconovo": "20.00"
+        "classe": "Epilação"
     },
     "019": {
         "ref": "019",
         "nome": "Perna Completa + VN",
         "preco": "18.00",
-        "preconovo": "18.00"
+        "classe": "Epilação"
     },
     "020": {
         "ref": "020",
         "nome": "½ perna + VN + axila",
         "preco": "18.00",
-        "preconovo": "20.00"
+        "classe": "Epilação"
     },
     "021": {
         "ref": "021",
         "nome": "½ perna + axila + B + S",
         "preco": "18.00",
-        "preconovo": "18.00"
+        "classe": "Epilação"
     },
     "022": {
         "ref": "022",
         "nome": "Microblanding (com retoque)",
         "preco": "190.00",
-        "preconovo": "190.00"
+        "classe": "Microblanding"
     },
     "023": {
         "ref": "023",
         "nome": "Retoque de cor extra",
         "preco": "140.00",
-        "preconovo": "140.00"
+        "classe": "Microblanding"
     },
     "024": {
         "ref": "024",
@@ -150,7 +150,7 @@
         "precom": "00.00",
         "precol": "00.00",
         "precoxl": "00.00",
-        "preconovo": "25.00"
+        "classe": "Gel"
     },
     "025": {
         "ref": "025",
@@ -159,7 +159,7 @@
         "precom": "55.00",
         "precol": "65.00",
         "precoxl": "00.00",
-        "preconovo": "30.00"
+        "classe": "Gel"
     },
     "026": {
         "ref": "026",
@@ -168,7 +168,7 @@
         "precom": "28.00",
         "precol": "35.00",
         "precoxl": "00.00",
-        "preconovo": "22.00"
+        "classe": "Gel"
     },
     "027": {
         "ref": "027",
@@ -177,7 +177,7 @@
         "precom": "2.00",
         "precol": "3.00",
         "precoxl": "00.00",
-        "preconovo": "1.50"
+        "classe": "Gel"
     },
     "028": {
         "ref": "028",
@@ -186,7 +186,7 @@
         "precom": "3.50",
         "precol": "4.50",
         "precoxl": "00.00",
-        "preconovo": "2.50"
+        "classe": "Gel"
     },
     "029": {
         "ref": "029",
@@ -195,7 +195,7 @@
         "precom": "00.00",
         "precol": "00.00",
         "precoxl": "00.00",
-        "preconovo": "30.00"
+        "classe": "Acrílico"
     },
     "030": {
         "ref": "030",
@@ -204,7 +204,7 @@
         "precom": "55.00",
         "precol": "65.00",
         "precoxl": "75.00",
-        "preconovo": "35.00"
+        "classe": "Acrílico"
     },
     "031": {
         "ref": "031",
@@ -213,7 +213,7 @@
         "precom": "30.00",
         "precol": "45.00",
         "precoxl": "60.00",
-        "preconovo": "25.00"
+        "classe": "Acrílico"
     },
     "032": {
         "ref": "032",
@@ -222,7 +222,7 @@
         "precom": "2.50",
         "precol": "3.50",
         "precoxl": "00.00",
-        "preconovo": "1.50"
+        "classe": "Acrílico"
     },
     "033": {
         "ref": "033",
@@ -231,201 +231,235 @@
         "precom": "4.00",
         "precol": "5.00",
         "precoxl": "00.00",
-        "preconovo": "2.50"
+        "classe": "Acrílico"
     },
     "034": {
         "ref": "034",
         "nome": "VERNIZ GEL (Gelinho)",
         "preco": "16.00",
-        "preconovo": "15.00"
+        "classe": "Outros"
     },
     "035": {
         "ref": "035",
         "nome": "Verniz Gel Reforçado",
         "preco": "22.00",
-        "preconovo": "7.00"
+        "classe": "Outros"
     },
     "036": {
         "ref": "036",
         "nome": "REMOVER Verniz Gel",
         "preco": "10.00",
-        "preconovo": "8.00"
+        "classe": "Outros"
     },
     "037": {
         "ref": "037",
         "nome": "REMOVER Gel / Acrílico",
         "preco": "15.00",
-        "preconovo": "10.00"
+        "classe": "Outros"
     },
     "038": {
         "ref": "038",
         "nome": "Unha Extra",
-        "preco": "1.00"
+        "preco": "1.00",
+        "classe": "Nail Art"
     },
     "039": {
         "ref": "039",
         "nome": "Efeito Sereia, cromados...",
-        "preco": "3.00"
+        "preco": "3.00",
+        "classe": "Nail Art"
     },
     "040": {
         "ref": "040",
         "nome": "Babyboomer/Babycolor",
-        "preco": "3.00"
+        "preco": "3.00",
+        "classe": "Nail Art"
     },
     "041": {
         "ref": "041",
         "nome": "Baby Glitter",
-        "preco": "3.00"
+        "preco": "3.00",
+        "classe": "Nail Art"
     },
     "042": {
         "ref": "042",
         "nome": "Nail Art em 10 Unhas",
-        "preco": "4.00"
+        "preco": "4.00",
+        "classe": "Nail Art"
     },
     "043": {
         "ref": "043",
         "nome": "Francesa",
-        "preco": "3.00"
+        "preco": "3.00",
+        "classe": "Nail Art"
     },
     "044": {
         "ref": "044",
         "nome": "Francesa c/ mais de 1 cor",
-        "preco": "4.00"
+        "preco": "4.00",
+        "classe": "Nail Art"
     },
     "045": {
         "ref": "045",
         "nome": "Sobrancelha",
-        "preco": "7.50"
+        "preco": "7.50",
+        "classe": "Threading"
     },
     "046": {
         "ref": "046",
         "nome": "Buço",
-        "preco": "5.00"
+        "preco": "5.00",
+        "classe": "Threading"
     },
     "047": {
         "ref": "047",
         "nome": "Queixo",
-        "preco": "6.00"
+        "preco": "6.00",
+        "classe": "Threading"
     },
     "048": {
         "ref": "048",
         "nome": "Maçãs do Rosto",
-        "preco": "6.00"
+        "preco": "6.00",
+        "classe": "Threading"
     },
     "049": {
         "ref": "049",
         "nome": "Rosto (pack especial)",
-        "preco": "18.00"
+        "preco": "18.00",
+        "classe": "Threading"
     },
     "050": {
         "ref": "050",
         "nome": "Manicure Normal",
-        "preco": "14.00"
+        "preco": "14.00",
+        "classe": "Manicure / Pedicure"
     },
     "051": {
         "ref": "051",
         "nome": "Pedicure Normal",
-        "preco": "14.00"
+        "preco": "14.00",
+        "classe": "Manicure / Pedicure"
     },
     "052": {
         "ref": "052",
         "nome": "Pedicure Spa",
-        "preco": "20.00"
+        "preco": "20.00",
+        "classe": "Manicure / Pedicure"
     },
     "053": {
         "ref": "053",
         "nome": "Pedicure Spa + calosidades",
-        "preco": "25.00"
+        "preco": "25.00",
+        "classe": "Manicure / Pedicure"
     },
     "054": {
         "ref": "054",
         "nome": "Pedicure Spa (C) + verniz gel",
-        "preco": "30.00"
+        "preco": "30.00",
+        "classe": "Manicure / Pedicure"
     },
     "055": {
         "ref": "055",
         "nome": "Verniz gel (Gelinho) pé",
-        "preco": "16.00"
+        "preco": "16.00",
+        "classe": "Manicure / Pedicure"
     },
     "056": {
         "ref": "056",
         "nome": "Hidra-facial",
-        "preco": "25.00"
+        "preco": "25.00",
+        "classe": "Tratamentos de Rosto"
     },
     "057": {
         "ref": "057",
         "nome": "Limpeza de pele",
-        "preco": "45.00"
+        "preco": "45.00",
+        "classe": "Tratamentos de Rosto"
     },
     "060": {
         "ref": "060",
         "nome": "Maquilhagem Social",
-        "preco": "40.00"
+        "preco": "40.00",
+        "classe": "Maquilhagem"
     },
     "062": {
         "ref": "062",
         "nome": "Massagem localizada (30 min)",
-        "preco": "20.00"
+        "preco": "20.00",
+        "classe": "Massagens"
     },
     "063": {
         "ref": "063",
         "nome": "Massagem relaxamento (50 min)",
-        "preco": "40.00"
+        "preco": "40.00",
+        "classe": "Massagens"
     },
     "064": {
         "ref": "064",
         "nome": "Massagem californiana (50 min)",
-        "preco": "40.00"
+        "preco": "40.00",
+        "classe": "Massagens"
     },
     "065": {
         "ref": "065",
         "nome": "Massagem aromaterapia (50 min)",
-        "preco": "45.00"
+        "preco": "45.00",
+        "classe": "Massagens"
     },
     "066": {
         "ref": "066",
         "nome": "Massagem de velas (50 min)",
-        "preco": "40.00"
+        "preco": "40.00",
+        "classe": "Massagens"
     },
     "067": {
         "ref": "067",
         "nome": "Massagem Adelgaçante (30 min) Z",
-        "preco": "25.00"
+        "preco": "25.00",
+        "classe": "Massagens"
     },
     "068": {
         "ref": "068",
         "nome": "Massagem Adelgaçante (50 min)",
-        "preco": "35.00"
+        "preco": "35.00",
+        "classe": "Massagens"
     },
     "069": {
         "ref": "069",
         "nome": "Exfoliação",
-        "preco": "25.00"
+        "preco": "25.00",
+        "classe": "Tratamentos de Corpo"
     },
     "070": {
         "ref": "070",
         "nome": "Hidratação",
-        "preco": "20.00"
+        "preco": "20.00",
+        "classe": "Tratamentos de Corpo"
     },
     "071": {
         "ref": "071",
         "nome": "Exfoliação+hidratação",
-        "preco": "40.00"
+        "preco": "40.00",
+        "classe": "Tratamentos de Corpo"
     },
     "059": {
         "ref": "059",
         "nome": "vazio",
-        "preco": "00.00"
+        "preco": "00.00",
+        "classe": "vazio"
     },
     "058": {
         "ref": "058",
-        "nome": "Limpeza e tratamento rosto",
-        "preco": "50.00"
+        "nome": "vazio",
+        "preco": "00.00",
+        "classe": "vazio"
     },
     "061": {
         "ref": "061",
-        "nome": "Maquilhagem c/eyeliner",
-        "preco": "35.00"
+        "nome": "vazio",
+        "preco": "00.00",
+        "classe": "vazio"
     }
 }
 

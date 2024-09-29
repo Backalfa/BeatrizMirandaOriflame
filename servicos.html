@@ -4,7 +4,7 @@
         <title>Beatriz Miranda Oriflame</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="website icon" type="png" href="content/imgs/icontab.png">
+        <link rel="website icon" type="png" href="./content/imgs/icontab.png">
         <link rel="stylesheet" href="content/css/stylemain.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
@@ -53,8 +53,6 @@
             <!-- Top header -->
             <header class="w3-container w3-xlarge">
                 <p class="w3-right">
-                    <i class="fa fa-shopping-cart w3-margin-right"></i>
-                    <i class="fa fa-search"></i>
                 </p>
             </header>
 
@@ -62,9 +60,9 @@
             <div class="w3-display-container w3-container">
                 <img src="content/imgs/top-view-salts-cream-container.jpg" alt="Oriflame" style="width: 100%;" />
                 <div class="w3-display-topleft w3-text-black" style="padding: 24px 48px;">
-                    <h1 class="w3-jumbo w3-hide-small">ORIFLAME</h1>
-                    <h1 class="w3-hide-large w3-hide-medium">ORIFLAME</h1>
-                    <h1 class="w3-hide-small">COLEÇÃO 2024</h1>
+                    <h1 class="w3-jumbo w3-hide-small">Estética e Nail Art</h1>
+                    <h1 class="w3-hide-large w3-hide-medium">Estética e Nail Art</h1>
+                    <h1 class="w3-hide-small">CATÁLOGO 2024</h1>
                     <p><a href="#promo" class="w3-button w3-black w3-padding-large w3-large">COMPRAR AGORA</a></p>
                 </div>
             </div>
@@ -595,29 +593,29 @@
 
             </script>
 
-<script>
-    $(document).ready(function() {
-        
-        setTimeout(function() {
+            <script>
+                $(document).ready(function() {
+                    
+                    setTimeout(function() {
 
-            var zeroValues = $('table').find('td').filter(function() {
-                return $(this).text().trim() === '00.00€';
-            });
+                        var zeroValues = $('table').find('td').filter(function() {
+                            return $(this).text().trim() === '00.00€';
+                        });
 
-            console.log(zeroValues.length + " células encontradas com valor 00.00€");
+                        console.log(zeroValues.length + " células encontradas com valor 00.00€");
 
-            zeroValues.css('display', 'none');
-        }, 500);
-    });
-</script>
+                        zeroValues.css('display', 'none');
+                    }, 500);
+                });
+            </script>
 
 
             <!-- Footer -->
             <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
                 <div class="w3-row-padding">
                         <h3>Métodos de Pagamento</h3>
-                        <p><i class="fa fa-fw fa-mobile"></i> MBWay</p>
-                        <p><i class="fa fa-fw fa-credit-card"></i> Transferência Bancária</p>
+                        <p><img src="./content/imgs/icons8-mb-way-48.svg" alt="mbway" width="50px"></p>
+                        <p><img src="./content/imgs/icons8-dinheiro-100.png" alt="numerario" width="50px"></p>
                         <br />
                     </div>
                 </div>
