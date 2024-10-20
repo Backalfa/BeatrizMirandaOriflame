@@ -1,18 +1,21 @@
+
+// Carregamento inicial com diferença na categoria Unhas
 function loadServices(categoria) {
-    fetch('Precos.txt')  // Carrega o arquivo TXT
-        .then(response => response.text())  // Obtém o conteúdo como texto
+    fetch('Precos.txt')
+        .then(response => response.text())
         .then(text => {
-            let data = JSON.parse(text);  // Converte o texto em JSON
+            let data = JSON.parse(text);
             let services;
 
-            console.log("Categoria selecionada:", categoria); // Debugging: Mostra a categoria
+            console.log("Categoria selecionada:", categoria);
 
+            //Altera o "display" para o próximo
             let serviceList = document.getElementById('serviceList');
             let content = document.getElementById('content');
 
-            serviceList.innerHTML = '';  // Limpa a lista de serviços anterior
-            content.style.display = 'none';  // Esconde os botões
-            serviceList.style.display = 'block'; // Mostra a lista de serviços
+            serviceList.innerHTML = '';
+            content.style.display = 'none';
+            serviceList.style.display = 'block';
 
             // Adiciona o botão de voltar
             serviceList.innerHTML += `
@@ -21,7 +24,7 @@ function loadServices(categoria) {
                 </button>
             `;
 
-            // Se a categoria for "Unhas", exiba os botões de tamanho
+            // Se a categoria for "Unhas", exibe os botões de tamanho (Outros, S, M, L e XL)
             if (categoria.toLowerCase() === 'unhas') {
                 serviceList.innerHTML += `
                     <div class="size-selection">
@@ -64,7 +67,7 @@ function loadServices(categoria) {
                     serviceList.innerHTML += serviceItem;  // Adiciona o serviço à lista
                 });
 
-                // Se não houver serviços, mostre uma mensagem
+                // Se não houver serviços, mostre uma mensagem. Ou seja, tem ERRO!
                 if (services.length === 0) {
                     serviceList.innerHTML += "<p>Nenhum serviço disponível para esta categoria.</p>";
                 }
@@ -75,6 +78,7 @@ function loadServices(categoria) {
         });
 }
 
+//Carregamento para filtrar por Tamanho.
 function loadServicesBySize(size) {
     fetch('Precos.txt')  // Carrega o arquivo TXT
         .then(response => response.text())  // Obtém o conteúdo como texto
@@ -184,6 +188,7 @@ function loadcard(servicename, categoria, size) {
         });
 }
 
+//Carregamento para adicionar componentes Nail Art
 function loadNailArtServices(size) {
     fetch('Precos.txt')
         .then(response => response.text())
@@ -234,12 +239,25 @@ function loadNailArtServices(size) {
         });
 }
 
+function saveProductToLocalStorage(nomeServico, preco) {
+    // Recupera os produtos existentes no localStorage
+    let selectedProducts = JSON.parse(localStorage.getItem('selectedProducts')) || [];
+
+    // Adiciona o novo produto à lista
+    selectedProducts.push({ nome: nomeServico, preco: preco });
+
+    // Salva a lista atualizada no localStorage
+    localStorage.setItem('selectedProducts', JSON.stringify(selectedProducts));
+}
+
 function finalshoop() {
     let total = 0;
     let tabelaConteudo = ''; // String que irá armazenar o conteúdo HTML da tabela
 
     // Seleciona todos os botões com a classe 'buythis'
     const buttons = document.querySelectorAll('button.buythis');
+
+    let selectedProducts = []; // Lista de produtos selecionados para armazenar no localStorage
 
     if (buttons.length > 0) {
         // Itera sobre cada botão para somar os preços e adicionar à tabela
@@ -257,9 +275,12 @@ function finalshoop() {
                         <td>${nomeServico}</td>
                         <td>${priceValue.toFixed(2)}€</td>
                     </tr>`;
+
+                // Adiciona o produto à lista de produtos selecionados
+                selectedProducts.push({ nome: nomeServico, preco: priceValue });
             }
         });
-    } 
+    }
 
     // Busca o serviço selecionado no localStorage
     const selectedService = JSON.parse(localStorage.getItem('selectedService'));
@@ -274,8 +295,14 @@ function finalshoop() {
                     <td>${selectedService.nome}</td>
                     <td>${localStoragePrice.toFixed(2)}€</td>
                 </tr>`;
+
+            // Adiciona o serviço selecionado ao array
+            selectedProducts.push({ nome: selectedService.nome, preco: localStoragePrice });
         }
     }
+
+    // Salva a lista de produtos no localStorage
+    localStorage.setItem('selectedProducts', JSON.stringify(selectedProducts));
 
     // Adiciona o total à tabela
     tabelaConteudo += `
@@ -290,6 +317,13 @@ function finalshoop() {
             <td colspan="2" style="text-align: center;">
                 <button onclick="clearSelectedServiceAndRefresh()" style="padding: 10px 20px; background-color: red; color: white; border: none; cursor: pointer;">
                     Limpar Serviço Selecionado e Recarregar
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <button onclick="goBackToMenu()" style="padding: 10px 20px; background-color: green; color: white; border: none; cursor: pointer;">
+                    Adicionar mais produtos
                 </button>
             </td>
         </tr>`;
@@ -316,9 +350,17 @@ function finalshoop() {
     document.getElementById('serviceList').style.display = 'none';
 }
 
+// Função para limpar o LocalStorage e recarregar a página
 function clearSelectedServiceAndRefresh() {
-    localStorage.removeItem('selectedService'); // Apaga somente o selectedService
-    location.reload();    // Recarrega a página
+    localStorage.removeItem('selectedService');  // Remove o serviço selecionado
+    localStorage.removeItem('selectedProducts'); // Limpa os produtos
+    window.location.reload(); // Recarrega a página
+}
+
+// Função para voltar ao menu de produtos
+function goBackToMenu() {
+    // Recarrega a página
+    location.reload();
 }
 
 function AddNailSave(nome, preco, buttonElement) {
@@ -341,9 +383,77 @@ function AddNailSave(nome, preco, buttonElement) {
             buttonElement.style.color = 'white'; // Define a cor do texto para branco
         }
     }
+
+
+    let produtosExistentes = JSON.parse(localStorage.getItem('produtos')) || [];
+    
+    // Adiciona o novo produto à lista de produtos existentes
+    produtosExistentes.push(buttonElement);
+    
+    // Atualiza o localStorage com o novo array de produtos
+    localStorage.setItem('produtos', JSON.stringify(produtosExistentes));
+    
+    // Atualiza a interface com o novo produto
+    renderSavedProducts([buttonElement]);
 }
 
 function goBack() {
     document.getElementById('serviceList').style.display = 'none';
     document.getElementById('content').style.display = 'block';
 }
+
+// Função para carregar os produtos salvos do LocalStorage
+
+function loadProductsFromLocalStorage() {
+    const selectedProducts = JSON.parse(localStorage.getItem('selectedProducts')) || [];
+
+    let tabelaConteudo = '';
+    let total = 0;
+
+    // Gera o conteúdo da tabela com base nos produtos armazenados
+    selectedProducts.forEach(product => {
+        tabelaConteudo += `
+            <tr>
+                <td>${product.nome}</td>
+                <td>${product.preco.toFixed(2)}€</td>
+            </tr>`;
+        total += product.preco;
+    });
+
+    // Adiciona o total à tabela
+    tabelaConteudo += `
+        <tr>
+            <td><strong>Total</strong></td>
+            <td><strong>${total.toFixed(2)}€</strong></td>
+        </tr>`;
+
+    // Exibe a tabela no HTML
+    const tabelaElement = document.getElementById('tabela-servicos');
+    tabelaElement.innerHTML = `
+        <table border="1" style="width:100%; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>Serviço</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                ${tabelaConteudo}
+            </tbody>
+        </table>`;
+
+    // Exibe a tabela e oculta a lista de serviços
+    document.getElementById('tabela-container').style.display = 'block';
+    document.getElementById('serviceList').style.display = 'none';
+}
+
+function renderSavedProducts(produtos) {
+    produtos.forEach(produto => {
+        // Aqui você renderiza os produtos já salvos
+        // Adicione cada produto na tabela ou onde você exibe os produtos
+        console.log('Produto salvo:', produto);
+        // Exemplo de como adicionar na interface
+        // document.getElementById('listaProdutos').innerHTML += `<div>${produto.nome} - ${produto.preco}</div>`;
+    });
+}
+
